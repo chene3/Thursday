@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+    <!-- Demo styles -->
+    <style>
+    .blog_img {
+            width: 300px;
+            height: 300px;
+            border-right: 2px solid #A28C54;
+            border-left: 2px solid #A28C54;
+            border-top: 2px solid #A28C54;
+            border-radius: 50% 50% 0 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .blog_img img {
+            width: 140%;
+            transition: .5s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*            -webkit-mask-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);*/
+        }
+        /*
+        li:hover img{
+            -webkit-transform: scaleX(1.1) scaleY(1.1);;
+            transform: scale(1.1);
+*/
+    }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="blog_img">
+                <img src="img/blog_3.png" alt="">
+            </div>
+        </li>
+    </ul>
+    <script>
+        $('li').hover(function() {
+            $('img', this).css('transform', 'scale(1.1)');
+        }, function() {
+            $('img', this).css('transform', 'scale(1)');
+        });
+    </script>
+</body>
+
+</html>

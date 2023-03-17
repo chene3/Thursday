@@ -1,0 +1,100 @@
+section{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left_box{
+    width: 30%;
+    box-sizing: border-box;
+}
+.left_box .img{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/contact_deco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.left_text{
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.left_text li{
+    color: #4B4127;
+    line-height: 2em;
+}
+.left_text li.deco::before{
+    content: '\2726';
+    margin-right: 5px;
+}
+.right_box{
+    width: 70%;
+    padding: 20px 50px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+label{
+    font-size: 20px;
+    padding-bottom: 10px;
+    display: block;
+    color: #A28C54;
+}
+input[type=text], textarea, input[type=submit]{
+    width: 100%;
+    margin-bottom: 30px;
+    color: #eee;
+    border: none;
+    border-bottom: 2px solid #A28C54;
+    background-color: transparent;
+    font-size: 20px;
+    
+}
+textarea{
+    resize: none;
+    border: none;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    /* background-color: #fff; */
+}
+.textarea_border{
+    position: relative;
+}
+.textarea_border::before, .textarea_border::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    
+    background-image: url(../img/contact_textarea.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.textarea_border::before{
+    top: 0;
+    left: 0;
+}
+.textarea_border::after{
+    right: 0;
+    top: 90px;
+    transform: rotate(180deg);
+}
+input[type=text]:focus, textarea:focus{
+    outline: none;
+}
+input[type=submit]{
+    font-family: 'Labrada','Time New Roman', serif;
+    width: auto;
+    padding: 5px 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    color: #A28C54;
+}
+input[type=submit]:active{
+    color: #4B4127;
+    border-bottom: 2px solid #4B4127;
+}

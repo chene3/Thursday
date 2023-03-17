@@ -1,0 +1,213 @@
+section{
+    width: 1000px;
+    margin: 0 auto;
+}
+.map_con{
+    width: 100%;
+    height: 563px;
+    background-image: url(../img/tourist-information_map_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 2px solid #A28C54;
+    margin-bottom: 30px;
+    position: relative;
+}
+.map_con img{
+    transform: scale(.5);
+    position: absolute;
+}
+.map_con div.bg{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: rotate(70deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map_con div p{
+    display: block;
+    transform: rotate(-70deg);
+    letter-spacing: 0.05em;
+    font-style: italic;
+}
+.light{
+    background-image: url(../img/tourist_map_icon_light.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 116px;
+    height: 162px;
+    position: absolute;
+
+    z-index: 22;
+}
+.church{
+    top: 100px;left: 40px;
+}
+.church_t{
+    width: 55px;
+    height: 110px;
+    top: 205px;left: 120px;
+}
+.cl{
+    top: 75px;left: 64px;
+    display: none;
+}
+a:hover .cl{ display: block; }
+.fountain{
+    top: 370px;left: 240px;
+}
+.fountain_t{
+    width: 55px;
+    height: 110px;
+    top: 440px;left: 350px;
+}
+.fl{
+    top: 320px;left: 277px;
+    display: none;
+}
+a:hover .fl{ display: block; }
+.alistair_thursday{
+    top: 200px;left: 370px;
+}
+.alistair_thursday_t{
+    width: 80px;
+    height: 160px;
+    top: 320px;left: 430px;
+}
+.al{
+    top: 185px;left: 370px;
+    display: none;
+}
+a:hover .al{ display: block; }
+.tourism_center{
+    top: 300px;left: 475px;
+}
+.tourism_center_t{
+    width: 75px;
+    height: 150px;
+    top: 400px;left: 600px;
+}
+.tl{
+    top: 300px;left: 535px;
+    display: none;
+}
+a:hover .tl{ display: block; }
+.mysterious_lake{
+    top: 60px;left: 320px;
+}
+.mysterious_lake_t{
+    width: 75px;
+    height: 150px;
+    top: 60px;left: 590px;
+}
+.ml{
+    top: 30px;left: 450px;
+    display: none;
+}
+a:hover .ml{ display: block; }
+.school_of_thursday{
+    top: -70px;right: -90px;
+}
+.school_of_thursday_t{
+    width: 85px;
+    height: 170px;
+    top: 150px;right: 220px;
+}
+.sl{
+    top: 10px;right: 90px;
+    display: none;
+}
+a:hover .sl{ display: block; }
+.crystal_cavern{
+    top: 60px;left: 220px;
+}
+.dl{
+    top: 10px;left: 198px;
+    display: none;
+}
+a:hover .dl{ display: block; }
+.shadowpaw{
+    right: 20px;bottom: 100px;
+}
+.ssl{
+    right: 0;bottom: 120px;
+    display: none;
+}
+a:hover .ssl{ display: block; }
+.att_into{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #A28C54;
+    text-indent: 10px;
+}
+.into_text{
+    width: 40%;
+    position: relative;
+}
+.into_text img{
+    width: 80px;
+    /* height: 100px; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.into_img{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.img_sild{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inf_con{
+    width: 50%;
+    padding: 40px;
+    position: relative;
+}
+.mar_car{margin-left: 150px;}
+.mar_bicycle{margin-left: 300px;}
+.mar_pedestrian{margin-left: 450px;}
+.inf_con h3{
+    color: #eee;
+}
+.inf_con h3::before{
+    content: '';
+    width: 300px;
+    height: 110px;
+    background-image: url(../img/tourist_text_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.text_con li{
+    color: #eee;
+    font-size: 14.5px;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+    list-style: '\2736';
+}
+.text_con{
+    width: 110%;
+    height: 330px;
+    box-sizing: border-box;
+    padding: 100px 70px 0 100px;
+    background-size: contain;
+}
+.bg_1{background-image: url(../img/tourist_con_bg_1.png);}
+.bg_2{background-image: url(../img/tourist_con_bg_2.png);}
+.bg_3{background-image: url(../img/tourist_con_bg_3.png);}
+.bg_4{background-image: url(../img/tourist_con_bg_4.png);}
+

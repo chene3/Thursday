@@ -1,0 +1,120 @@
+.block_1{
+    /* outline: 1px solid red; */
+    width: 1000px;
+    margin: 0px auto 200px;
+    display: flex;
+    align-items: flex-start;
+
+    position: relative;
+}
+.star_bg{
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.star_bg img{
+    width: 100%;
+}
+.aastar_bg{
+    position: absolute;
+    width: 362.5px;
+    height: 500px;
+    top: 60px;
+    left: 75px;
+    background-image: url(../img/his_star.png);
+    background-size: cover;
+    background-position: center center;
+    z-index: 22;
+    pointer-events: none;
+}
+.con_text{
+    width: 50%;
+}
+.con_text p{
+    margin-bottom: 20px;
+    padding-right: 50px;
+    
+}
+
+/*-------------block_02-------------*/
+.block_2{
+    width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+}
+.time_line{
+    width: 1000px;
+    position: relative;
+}
+.time_line::before{
+    content: "";
+    width: 3px;
+    height: calc( 100% - 510px );
+    margin-top: 200px;
+    background: #A28C54;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+}
+.content_1{
+    width: 100%;
+    margin-bottom: 100px;
+    /* position: relative; */
+
+    display: flex;
+    
+    /* align-content: space-between; */
+    /* align-items:end; */
+}
+.img_flex{
+    width: 300px;
+    flex-grow: 1;
+}
+.content_img{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 150px;
+    overflow: hidden;
+}
+.content_img img{
+    width: 100%;
+}
+.content_box{
+    box-sizing: border-box;
+    width: 300px;
+    margin: 140px 10px 0px;
+    padding: 40px;
+    flex-grow: 1;
+    position: relative;
+}
+.left::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    right: -26.5px;
+    background-image: url(../img/Star.png);
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+.right::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    left: -23.5px;
+    background-image: url(../img/Star.png);
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+.content_box h2{
+    margin-bottom: 10px;
+}
