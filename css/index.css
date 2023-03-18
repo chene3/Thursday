@@ -111,11 +111,13 @@ ul.box_1{
 
 /*--------------- content_news -----------------*/
 .content_news{
-    height: 600px;
-    background-color: #A28C54;
+    /* height: 600px; */
+    /* background-color: #A28C54; */
     margin: 50px 0;
 }
-
+.content_news img{
+    width: 100%;
+}
 /*--------------- content_slide -----------------*/
 .content_slide{
     margin: 0 20px;
