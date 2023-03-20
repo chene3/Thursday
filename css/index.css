@@ -6,10 +6,54 @@
 section.banner{
     width: 100%;
     height: 100vh;
-
+    position: relative;
 }
 .banner video{
     object-fit:cover;
+}
+.banner img.c{
+    width: 120px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .5));
+    animation: run 20s linear infinite;
+}
+.banner img.a{
+    width: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    right: 0;
+    margin: auto;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .5));
+}
+.banner .run:hover img.a{
+    animation: a 2s linear infinite;
+}
+@keyframes run {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+@keyframes a{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-7px);
+    }
+    75%{
+        transform: translateY(7px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 /*--------------- content_text -----------------*/
 ul.content_flex{
