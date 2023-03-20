@@ -7,35 +7,42 @@ var isElementMovedOut = false;
 var isMouseOnLogoIcon = false;
 
 window.addEventListener('scroll', function() {
-var scrollHeight = window.scrollY;
-// var windowHeight = window.innerHeight;
-// var scrollPosition = scrollHeight / windowHeight;
-if (scrollHeight > 0 && !isElementMovedOut && !isMouseOnLogoIcon) {
-    myFunction(true);
-}else if(scrollHeight === 0 && isElementMovedOut) {
-    myFunction(false);
-}
-});
-// 如果滾輪往上滾動
-document.addEventListener('wheel', function(event) {
-if (event.deltaY > 0 && isElementMovedOut && !isMouseOnLogoIcon) {
-    myFunction(true);
-}
-});
-
-document.addEventListener('mouseover', function(event) {
-if (event.target.id === 'logoIcon') {
-    isMouseOnLogoIcon = true;
-    myFunction(false);
-}
-});
-document.addEventListener('mouseout', function(event) {
-if (event.target.id === 'logoIcon') {
-    isMouseOnLogoIcon = false;
-    myFunction();
-}
-});
-
+    var scrollHeight = window.scrollY;
+    var windowHeight = window.innerHeight;
+    var scrollPosition = scrollHeight / windowHeight;
+  
+    if ( scrollHeight > 0 && !isElementMovedOut) {
+      enableMouseEventListeners();
+      myFunction();
+    } else if (scrollHeight === 0 && isElementMovedOut) {
+      disableMouseEventListeners();
+      myFunction(false);
+    }
+  });
+  
+  function enableMouseEventListeners() {
+    document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener('mouseout', handleMouseOut);
+  }
+  
+  function disableMouseEventListeners() {
+    document.removeEventListener('mouseover', handleMouseOver);
+    document.removeEventListener('mouseout', handleMouseOut);
+  }
+  
+  function handleMouseOver(event) {
+    if (event.target.id === 'logoIcon') {
+      isMouseOnLogoIcon = true;
+      myFunction(false);
+    }
+  }
+  
+  function handleMouseOut(event) {
+    if (event.target.id === 'logoIcon') {
+      isMouseOnLogoIcon = false;
+      myFunction();
+    }
+  }
 function myFunction(moveOut = true) {
 var element = document.getElementById('logoText');
 if (moveOut) {
