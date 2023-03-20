@@ -14,35 +14,32 @@
 
         <!-- Demo styles -->
         <style>
-            div {
+            div.box {
                 height: 1300px;
             }
         </style>
     </head>
 
-    <body>
-        <div></div>
-        <p class="gst">
-            <b id="jsScrollTop" class="result">0</b>
-        </p>
-        <p class="gst">
-            <button id="getScrollTop" class="btn">JavaScript 取得捲動後的高度</button>
-        </p>
+    <h1>WheelEvent deltaY Property</h1>
 
-        <script>
-            window.addEventListener('scroll', function () {
-                var scrollHeight = window.scrollY;
-                var windowHeight = window.innerHeight;
-                var scrollPosition = scrollHeight / windowHeight;
-                if (scrollPosition >= 1) {
-                    myFunction();
-                }
-            });
+<p>Resize the DIV element by scrolling inside it:</p>
 
-            function myFunction() {
-                console.log("ccc");
-            }
-        </script>
-    </body>
+<div onwheel="myFunction(event)" style="width:100px;height:100px;background-color:Tomato"></div>
+<div class="box"></div>
+<script>
+function myFunction(event) {
+  var y = event.deltaY;
+  var currentSize = event.target.style.width;
+  if (y > 0) {
+    newSize = parseInt(currentSize) + 10;
+  } else {
+    newSize = parseInt(currentSize) - 10;
+  }
+  event.target.style.width = newSize + "px";
+  event.target.style.height = newSize + "px";
+}
+</script>
+
 
 </html>
+
