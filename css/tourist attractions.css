@@ -164,11 +164,33 @@ h2{
     width: 55%;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+}
+.img_main{
+    width: 400px;
+    height: 400px;
+}
+.img_main img{
+    width: 100%;
 }
 .img_sild{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.img_sild_c{
+    width: 130px;
+    height: 130px;
+    position: relative;
+}
+.img_sild_c img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .inf_con{
     width: 50%;
