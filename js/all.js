@@ -9,7 +9,7 @@ var isMouseOnLogoIcon = false;
 window.addEventListener('scroll', function() {
     var scrollHeight = window.scrollY;
     var windowHeight = window.innerHeight;
-    var scrollPosition = scrollHeight / windowHeight;
+    // var scrollPosition = scrollHeight / windowHeight;
   
     if ( scrollHeight > 0 && !isElementMovedOut) {
       enableMouseEventListeners();
@@ -53,5 +53,3 @@ if (moveOut) {
     isElementMovedOut = false;
 }
 }
-
-

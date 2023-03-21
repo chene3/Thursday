@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="utf-8"/>
-        <title>Swiper demo</title>
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-        <!-- Link Swiper's CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-            <link rel="stylesheet" href="test.css">
-    </head>
-    <div id="mouse-follower">
-      <!-- <img src="img/blog_page_arrow_b.png" alt="Mouse Follower"> -->
-    </div>
-    <div class="box"></div>
-    <script language="javascript">
-      const mouseFollower = document.getElementById("mouse-follower");
+const mouseFollower = document.getElementById("mouse-follower");
 const tailDelay = 0.2; // 延遲時間，單位為秒
 const tailLength = 5; // 尾巴的長度，單位為個
 const tailSpacing = 2; // 尾巴的間距，單位為像素
@@ -56,9 +36,3 @@ function addTail(x, y) {
     tailElements.splice(tailElements.indexOf(tailElement), 1);
   }, tailDelay * 1000 + tailLength * tailSpacing);
 }
-
-
-    </script>
-
-
-</html>
