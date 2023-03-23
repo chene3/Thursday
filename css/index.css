@@ -180,7 +180,6 @@ ul.box_1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .slide li::after{
     contain: '';
@@ -194,12 +193,24 @@ ul.box_1{
     z-index: 22;
 }
 .slide img{
-    width: 150px;
+    width: 100px;
 }
 .slide img, .slide h3{
-    /* filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .7)); */
     filter: drop-shadow(1px 1px 1px rgba(20, 20, 20, .7));
-    /* text-shadow: (0px 0px 0px rgba(0, 0, 0, .8)); */
+    font-size: 16px;
+    /* text-stroke: 1.5px #efe4d1; */
+}
+.h3_box{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgba(55, 55, 55, 0.3);
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 .filter{
     width: 100%;

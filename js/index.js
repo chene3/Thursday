@@ -54,3 +54,21 @@ if (moveOut) {
     isElementMovedOut = false;
 }
 }
+
+/*------------run_button-------------*/
+$("#run_button").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#banner").offset().top
+  }, 500);
+});
+
+
+
+/*-----------------content_slide_hover------------------*/
+
+// var item_li = getAttribute("item_li");
+
+// item_li.addEventListener("mouseover", function(){
+
+// });
+
