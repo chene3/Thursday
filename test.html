@@ -8,113 +8,116 @@
             name="viewport"
             content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <!-- Link Swiper's CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+        
             <link rel="stylesheet" href="test.css">
             <style>
-             *{
-                box-sizing: border-box;
-              }
-              div.parent_block{
-                border: 1px solid black;
-                display: flex;
-              }
-              div.left_block{
-                border: 1px solid red;
-                flex-basis: 100px;
-                flex-shrink: 0;
-              }
-              div.left_block a.link{
-                text-decoration: none;
-              }
-              div.left_block a.-on{
-                background-color: black;
-                color: white;
-              }
-              div.right_block{
-                border: 1px solid blue;
-                flex-grow: 1;
-                height: 300px;
-                overflow-y: auto;
-                
-                /* offsetTop 才會相對於這個元素 */
-                position: relative;
-              }
-              div.each_block{
-                border: 1px solid orange;
-                
-                /* height: 500px; */
-                /* min-height: 100%; */
-                min-height: calc(100% + 2px);
-              }
+                section.content_news {
+    position: relative;
+    height: 500px;
+}
+.container{
+  background-color: azure;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* width: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-basis: 500px;
+}
+
+.swiper-slide{
+   border: 1px solid red;
+    /* height: 400px; */
+    background-image: url(../img/news_bgi.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    clear: both;
+}
+
             </style>
     </head>
     <body>
       
-      <div class="parent_block">
-
-        <div class="left_block">
-          <ul class="list">
-            <li><a href="#" id="link1" class="link -on">一</a></li>
-            <li><a href="#" id="link2" class="link">二</a></li>
-            <li><a href="#" id="link3" class="link">三</a></li>
-          </ul>
+      <section class="content_news"> 
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="box">
+                    <div class="box_title"><a href="news_page.html" class="h3_hover"><h3>Important Notice: E3 Road Construction Underway in Thursday</h3></a>
+                    <div class="time">1999,02,21</div>
+                  </div>
+                  <div class="text"><a href="news_page.html"><p>Attention all Thursday residents and visitors: Construction on E3 Road will begin next week, and is expected to continue for the next several months. The road will be undergoing extensive renovations and upgrades, including repairs to the pavement and sidewalks, as well as the installation of new streetlights and traffic signals.</p></a></div>
+                  <a href="news_page.html" class="more">more<svg width="31" height="10" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.5 5H30L22.5 0.5V9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg></a>
+              </div></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+        
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-black"></div>
+            <div class="swiper-button-next "></div>
         </div>
-      
-        <div class="right_block" id="scroll_block">
-          <div class="each_block" data-id="link1">內容一</div>
-          <div class="each_block" data-id="link2">內容二</div>
-          <div class="each_block" data-id="link3">內容三</div>
-        </div>
-      
-      </div>
-
-      <script language="javascript">
-          scroll_block = document.getElementById("scroll_block");
-          scroll_block.addEventListener("scroll", function(){
-            var block = this.querySelectorAll("div.each_block");
-            var left_link = this.closest("div.parent_block").querySelectorAll("a.link");
-            left_link.forEach(function(item, i){
-              item.classList.remove("-on");
-            });
-            // let link = link.classList.add("-on");
-
-            // var block01_h = block[0].offsetHeight - this.scrollTop;
-            // var block02_h = block[1].offsetHeight - this.scrollTop;
-            // var block03_h = block[2].offsetHeight - this.scrollTop;
-            
-            
-            for(let i = 0; i< block.length; i++){
-              let scroll_height = block[i].offsetTop - this.scrollTop;
-              if(scroll_height <= 0 && scroll_height >= -block[i].offsetHeight){
-                let link_id = block[i].getAttribute("data-id");
-                link = document.getElementById(link_id);
-              }
+</section>
+      <script>
+        $(document).ready(function() {
+// Swiper: Slider
+    new Swiper('.swiper-container', {
+        loop: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        // loopedSlides: 5,
+        paginationClickable: true,
+        // slidesOffsetBefore : 50,
+        slidesPerView: 'auto',
+        // slidesPerGroupAuto: true,
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1028: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 40
             }
+        }
+    });
+});
 
-            link.classList.add("-on");
-          });
-
-          //左側連結的點擊
-          let leftlinks = document.getElementsByClassName("link");
-          for(let i = 0; i < leftlinks.length; i++){
-            leftlinks[i].addEventListener("click", function(e){
-              e.preventDefault();
-              let link_id = this.getAttribute("id");
-              let each_block = document.querySelector("div.each_block[data-id=" + link_id +"]");
-
-              //跳到某div
-              // scroll_block.scrollTop = each_block.offsetTop + 1;
-              //滑動到某div
-              scroll_block.scrollTo({
-                top: each_block.offsetTop + 1,
-                behavior: "smooth"
-              });
-            })
-          };
 
       </script>
-
   </body>
 </html>

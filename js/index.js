@@ -64,11 +64,30 @@ $("#run_button").click(function() {
 
 
 
-/*-----------------content_slide_hover------------------*/
-
-// var item_li = getAttribute("item_li");
-
-// item_li.addEventListener("mouseover", function(){
-
-// });
-
+/*-----------------news------------------*/
+new Swiper('.swiper-container', {
+  loop: true,
+  
+  navigation: {
+    
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+  },
+  slidesPerView: 3,
+  paginationClickable: true,
+  slidesOffsetBefore : -330,
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    1028: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    }
+  }
+});
