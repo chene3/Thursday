@@ -53,3 +53,35 @@ if (moveOut) {
     isElementMovedOut = false;
 }
 }
+
+
+/*-------------att_into_imgslide-----------------*/
+
+var main = document.getElementsByClassName("img_main")[0];
+var item2 = document.getElementById("item2");
+var img_sild = document.getElementsByClassName("img_sild_c");
+var currentIndex = 0;
+var intervalId = setInterval(changeImage, 3000);
+
+function changeImage() {
+  
+  currentIndex = (currentIndex + 1) % img_sild.length;
+  var new_img = img_sild[currentIndex].innerHTML;
+  main.querySelector("img").remove();
+  main.insertAdjacentHTML('beforeend', new_img);
+}
+
+function restartTimer(index) {
+  currentIndex = index;
+  clearInterval(intervalId);
+  intervalId = setInterval(changeImage, 3000);
+}
+
+for(let i = 0; i < img_sild.length; i++){
+  img_sild[i].addEventListener("mousedown", function(){
+    var new_img = img_sild[i].innerHTML;
+    main.querySelector("img").remove();
+    main.insertAdjacentHTML('beforeend', new_img);
+    restartTimer(i);
+  });
+}

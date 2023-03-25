@@ -139,9 +139,10 @@ a:hover .dl{ display: block; }
 }
 a:hover .ssl{ display: block; }
 .att_into{
+    height: 400px;
     margin-bottom: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 h2{
     margin-bottom: 20px;
@@ -152,10 +153,11 @@ h2{
 .into_text{
     width: 40%;
     position: relative;
+    font-style: italic;
+    /* border: 1px solid red; */
 }
 .into_text img{
     width: 80px;
-    /* height: 100px; */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -166,40 +168,71 @@ h2{
     flex-basis: 50%;
     justify-content: space-around;
     flex-direction: column;
-    overflow: hidden;
+    position: relative;
 }
 .img_main{
-    border: 1px solid red;
+    border: 2px solid #A28C54;
     overflow: hidden;
-    border-radius: 150px;
+    border-radius: 50%;
     margin-bottom: 10px;
-    width: 100%;
-    height: 300px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    width: 400px;
+    height: 336px;
+    overflow: hidden;
+    transform: skewX(-30deg);
+    
+    position: relative;
 }
 .img_main img{
-    width: 100%;
+    width: 115%;
+    transform: skewX(30deg);
+    position: absolute;
+    left: -20px;
+    top: -50px;
 }
 .img_sild{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: space-between;
-    
 }
 .img_sild_c{
-    width: 125px;
-    height: 125px;
-    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #A28C54;
+    overflow: hidden;
+    object-position: center center;
 }
-
 .img_sild_c img{
     width: 100%;
+}
+.into_img .bg_icon{
     position: absolute;
+    width: 230px;
+    /* height: 60px; */
+    object-fit: contain;
+    /* border: 1px solid red; */
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    margin: auto;
-    
+}
+.into_img .bg_icon img{
+    width: 100%;
+} 
+.img_sild_c:first-child{
+    position: absolute;
+    left: 439px;
+    top: 168px;
+}
+.img_sild_c:nth-child(2){
+    position: absolute;
+    left: 388px;
+    top: 230px;
+}
+.img_sild_c:last-child{
+    position: absolute;
+    left: 335px;
+    top: 279px;
 }
 .inf_con{
     width: 50%;

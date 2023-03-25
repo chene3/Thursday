@@ -23,6 +23,7 @@ section{
     top: 60px;
     left: 15px;
     box-sizing: border-box;
+    border-radius: 3px;
     padding: 15px;
 }
 .box_title h3{

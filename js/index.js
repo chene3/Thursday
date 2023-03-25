@@ -67,9 +67,7 @@ $("#run_button").click(function() {
 /*-----------------news------------------*/
 new Swiper('.swiper-container', {
   loop: true,
-  
   navigation: {
-    
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next',
   },
