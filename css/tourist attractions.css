@@ -138,11 +138,17 @@ a:hover .dl{ display: block; }
     display: none;
 }
 a:hover .ssl{ display: block; }
+
+/*---------------   內容介紹 ＿ 開始   -----------------*/
 .att_into{
     height: 400px;
     margin-bottom: 80px;
-    display: flex;
     justify-content: space-around;
+    display: none;
+    
+}
+.-on{
+    display: flex;
 }
 h2{
     margin-bottom: 20px;
@@ -157,7 +163,9 @@ h2{
     /* border: 1px solid red; */
 }
 .into_text img{
-    width: 80px;
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -234,6 +242,7 @@ h2{
     left: 335px;
     top: 279px;
 }
+/*---------------   內容介紹 ＿ 開始   -----------------*/
 .inf_con{
     width: 50%;
     padding: 40px;

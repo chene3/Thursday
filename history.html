@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="icon" href="img/title_iocn.png" type="image/x-icon" / >
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/header.css">
@@ -56,6 +57,35 @@
         <p>As the centuries passed, Thursday evolved into a thriving community, but it never forgot its magical roots. Today, the town is a popular tourist destination, with visitors from all over the world coming to explore its ancient streets, visit its museums of magic, and witness its famous magical pageants.</p>
         <p>Despite its long and storied history, Thursday remains a town full of mystery and wonder. Its magical energies still flow through its streets, and visitors can feel the power of its ancient enchantments in every corner of the town.</p>
     </div>
+    </section>
+    <section class="anm">
+        
+        <lord-icon
+            src="https://cdn.lordicon.com/wlpxtupd.json"
+            trigger="hover"
+            colors="primary:#a28c54,secondary:#eeeeee"
+            stroke="25"
+            state="hover-1"
+            style="width:200px;height:200px">
+        </lord-icon>
+        <lord-icon
+            src="https://cdn.lordicon.com/hpxruznz.json"
+            trigger="hover"
+            colors="primary:#a28c54,secondary:#ffffff"
+            stroke="25"
+            style="width:200px;height:200px">
+        </lord-icon>
+        <lord-icon
+            src="https://cdn.lordicon.com/tgnqhsfe.json"
+            trigger="hover"
+            colors="primary:#eeeeee,secondary:#a28c54"
+            stroke="25"
+            style="width:200px;height:200px">
+        </lord-icon>
+        
+        <div class="fill fill_1"></div>
+        <div class="fill fill_2"></div>
+        <div class="fill fill_3"></div>
     </section>
     <section class="block_2">
         <div class="time_line">
@@ -136,8 +166,33 @@
             </div>
     </footer>
     <script src="js/all.js"></script>
-    <script src="js/mouse.js"></script>
+    <!-- <script src="js/mouse.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <script>
+        /*--------------GIF小動畫------------------*/
+        var hover = document.getElementsByClassName('fill');
+        for(let i = 0; i < hover.length; i++){
+            hover[i].addEventListener('mouseover', function(){
+                if(i === 0){
+                    this.classList.add("hover");
+                setTimeout(function(){
+                this.classList.remove("hover");
+                }.bind(this), 3700);
+                }else{
+                this.classList.add("hover");
+                setTimeout(function(){
+                this.classList.remove("hover");
+                }.bind(this), 2000);
+            }
+        })
+
+    };
+
+
+    </script>
+
+
+
 </body>
 </html>

@@ -1,8 +1,25 @@
 section{
     width: 1000px;
     margin: 80px auto;
-
+    position: relative;
+    border: 1px solid red;
 }
+.dot {
+    width: 150px;
+    height: 150px;
+    background-color: #1878c7;
+    position: absolute;
+    top: 150px;
+    transform: translateX(-50%);
+    transition: 3s;
+    left: 80%;
+}
+/* .dot_left{
+    left: 80%;
+}
+.dot_right{
+    left: 20%;
+} */
 .box{
     width: 55%;
     height: 400px;
@@ -11,6 +28,8 @@ section{
     background-repeat: no-repeat;
     position: relative;
     clear: both;
+    border: 1px solid red;
+    padding: 20px 0;
 }
 .box_right{
     float: right;

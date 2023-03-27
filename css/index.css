@@ -153,14 +153,18 @@ ul.box_1{
 /*--------------- content_news -----------------*/
 .content_news{
     background-color: #A28C54;
-    
 }
 .swiper-container {
     width: 100%;
-    height: 490px;
+    height: 550px;
     background: linear-gradient(90deg, #4B4127 0%, rgba(75, 65, 39, 0.5) 17.19%, rgba(75, 65, 39, 0) 29.69%, rgba(75, 65, 39, 0) 70.31%, rgba(75, 65, 39, 0.5) 82.29%, #4B4127 100%);
     pointer-events: none;
-  }
+}
+.swiper-container h1{
+    color: #eeeeee;
+    text-align: center;
+    padding: 15px 0;
+}
   
   .swiper-slide {
     width: 500px;
@@ -182,7 +186,6 @@ ul.box_1{
     height: 400px;
     cursor: pointer;
     pointer-events: all;
-    /* border: 3px solid #4B4127; */
   }
   
   .swiper-button-prev {
