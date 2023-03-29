@@ -173,7 +173,8 @@
         /*--------------GIF小動畫------------------*/
         var hover = document.getElementsByClassName('fill');
         for(let i = 0; i < hover.length; i++){
-            hover[i].addEventListener('mouseover', function(){
+            hover[i].addEventListener('mouseenter', function(e){
+                
                 if(i === 0){
                     this.classList.add("hover");
                 setTimeout(function(){
@@ -184,11 +185,10 @@
                 setTimeout(function(){
                 this.classList.remove("hover");
                 }.bind(this), 2000);
+               
             }
         })
-
     };
-
 
     </script>
 

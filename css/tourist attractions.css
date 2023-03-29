@@ -123,6 +123,7 @@ a:hover .ml{ display: block; }
 }
 a:hover .sl{ display: block; }
 .crystal_cavern{
+    width: 70px;
     top: 60px;left: 220px;
 }
 .dl{
@@ -131,6 +132,7 @@ a:hover .sl{ display: block; }
 }
 a:hover .dl{ display: block; }
 .shadowpaw{
+    width: 90px;
     right: 20px;bottom: 100px;
 }
 .ssl{
@@ -145,7 +147,6 @@ a:hover .ssl{ display: block; }
     margin-bottom: 80px;
     justify-content: space-around;
     display: none;
-    
 }
 .-on{
     display: flex;
@@ -189,11 +190,11 @@ h2{
     height: 336px;
     overflow: hidden;
     transform: skewX(-30deg);
-    
+    object-position: center center;
     position: relative;
 }
 .img_main img{
-    width: 115%;
+    width: 112%;
     transform: skewX(30deg);
     position: absolute;
     left: -20px;
@@ -210,10 +211,11 @@ h2{
     border-radius: 50%;
     border: 2px solid #A28C54;
     overflow: hidden;
-    object-position: center center;
+    
 }
 .img_sild_c img{
-    width: 100%;
+    width: 130%;
+    
 }
 .into_img .bg_icon{
     position: absolute;

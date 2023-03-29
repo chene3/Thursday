@@ -115,6 +115,63 @@
             }
         }
     });
+
+    var main = document.getElementsByClassName("img_main");
+        var item2 = document.getElementById("item2");
+        var img_sild = document.getElementsByClassName("img_sild_c");
+        var currentIndex = 0;
+        var intervalId = setInterval(changeImage, 3000);
+        
+
+        function changeImage() {
+          currentIndex = (currentIndex + 1) % img_sild.length;
+          var new_img = img_sild[currentIndex].innerHTML;
+          main[0].querySelector("img").remove();
+          main[0].insertAdjacentHTML('beforeend', new_img);
+        }
+        
+        function restartTimer(index) {
+          currentIndex = index;
+          clearInterval(intervalId);
+          intervalId = setInterval(changeImage, 3000);
+        }
+        
+        for(let i = 0; i < img_sild.length; i++){
+          img_sild[i].addEventListener("mousedown", function(e){
+            var new_img = img_sild[i].innerHTML;
+            main[0].querySelector("img").remove();
+            main[0].insertAdjacentHTML('beforeend', new_img);
+            restartTimer(i);
+          });
+        }
+
+
+        for(let j = 0; j< btn.length; j++){
+
+            btn[j].addEventListener('click', function(){
+                
+                function changeImage() {
+                    currentIndex = (currentIndex + 1 + (j * 3)) % img_sild.length;
+                    var new_img = img_sild[currentIndex].innerHTML;
+                    main[j].querySelector("img").remove();
+                    main[j].insertAdjacentHTML('beforeend', new_img);
+                }
+                function restartTimer(index) {
+                    currentIndex = index;
+                    clearInterval(intervalId);
+                    intervalId = setInterval(changeImage, 3000);
+                }
+                
+                for(let i = 0; i < img_sild.length; i++){
+                img_sild[i + (j * 3)].addEventListener("mousedown", function(){
+                    var new_img = img_sild[i + (j * 3)].innerHTML;
+                    main[j].querySelector("img").remove();
+                    main[j].insertAdjacentHTML('beforeend', new_img);
+                    restartTimer(i);
+                });
+            }})
+
+        };
 });
 
 
