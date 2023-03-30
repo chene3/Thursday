@@ -2,24 +2,22 @@ section{
     width: 1000px;
     margin: 80px auto;
     position: relative;
-    border: 1px solid red;
 }
 .dot {
-    width: 150px;
-    height: 150px;
-    background-color: #1878c7;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/owl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: 150px;
     transform: translateX(-50%);
+/*    transform: rotateY(180deg);*/
+    filter: drop-shadow(3px 3px 3px rgba(30, 30, 30, .5));
     transition: 3s;
     left: 80%;
+    z-index: 33;
 }
-/* .dot_left{
-    left: 80%;
-}
-.dot_right{
-    left: 20%;
-} */
 .box{
     width: 55%;
     height: 400px;
@@ -28,8 +26,8 @@ section{
     background-repeat: no-repeat;
     position: relative;
     clear: both;
-    border: 1px solid red;
     padding: 20px 0;
+    z-index: -1;
 }
 .box_right{
     float: right;

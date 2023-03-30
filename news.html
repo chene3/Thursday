@@ -104,64 +104,55 @@
     <!-- <script src="js/mouse.js"></script> -->
     <script>
         var con_oftop = document.getElementById('con').offsetTop;
-var box_height = document.getElementsByClassName('box')[0].offsetHeight;
-var dot = document.getElementById('dot');
-var box = document.getElementsByClassName('box');
-var dot_start = dot.offsetTop;
+        var box = document.getElementsByClassName('box');
+        var box_height = box[0].offsetHeight;  // 422px
+        var dot = document.getElementById('dot');
+        var dot_start = dot.offsetTop;
+        
+        
+        
+        window.addEventListener("scroll", function(){
+            var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
+            var start = scrollY - 100;
+            // console.log(scrollY);
+            console.log(start);
 
-var last_left = 80; // 記錄上一次的 left 值
+            if(start < -10 && start > -200){
+                dot.style.top = '150px';
+                dot.style.left = '70%';
+//                dot.style.transform = 'rotateY(0deg)';
+            }
 
-function updateScroll() {
-  var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
-  var start = scrollY - 100;
-  var dot_top = dot_start;
-  var dot_left = 80; // 初始left值
+            if(start < 10 && start > -10){
+                dot.style.top = '572px';
+                dot.style.left = '15%';
+//                dot.style.transform = 'rotateY(180deg)';
+            }
 
-  for (let i = 0; i < box.length; i++) {
-    var scroll_height = box[i].offsetTop - start;
-    if (scroll_height < 0 && scroll_height > -box[i].offsetHeight) {
-      let godown = (i + 1) * 422 + 150;
-      dot_top = godown;
-      
-      // 判斷是否要改變 left 值
-      if (dot_left === 80 && last_left === 80) {
-        dot_left = 20;
-      } else if (dot_left === 20 && last_left === 20) {
-        dot_left = 80;
-      }
-      
-      // 更新 last_left 的值
-      last_left = dot_left;
+            if(start < 412 && start > 10){
+                dot.style.top = '572px';
+                dot.style.left = '15%';
+//                dot.style.transform = 'rotateY(180deg)';
+            }
 
-      // 將 left 值應用到 CSS 樣式中
-      dot.style.left = `${dot_left}%`;
-    }
-  }
+            if(start < 432 && start > 412){
+                dot.style.top = '1014px';
+                dot.style.left = '70%';
+//                dot.style.transform = 'rotateY(0deg)';
+            }
 
-  // 判斷是否已經滾動到了最頂部
-  if (scrollY <= 0) {
-    dot_top = dot_start;
-    if (dot.classList.contains("dot_right")) {
-      dot.classList.replace("dot_right", "dot_left");
-    }
-
-    // 回到初始 left 值
-    dot_left = 80;
-    last_left = 80;
-
-    // 將 left 值應用到 CSS 樣式中
-    dot.style.left = `${dot_left}%`;
-  }
-
-  dot.style.top = dot_top + 'px';
-}
-
-// 初次載入頁面時也先執行一次更新
-updateScroll();
-
-window.addEventListener('scroll', updateScroll);
-window.addEventListener('resize', updateScroll);
-
+            if(start < 834 && start > 432){
+                dot.style.top = '1014px';
+                dot.style.left = '70%';
+//                dot.style.transform = 'rotateY(0deg)';
+            }
+            
+            if(start < 1000 && start > 834){
+                dot.style.top = '1456px';
+                dot.style.left = '15%';
+//                dot.style.transform = 'rotateY(180deg)';
+            }
+        });
 
 
     </script>
