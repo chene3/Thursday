@@ -47,3 +47,34 @@ footer{
 .footer_link a:hover:first-child{ background-position: 0 0;}
 .footer_link a:hover:nth-child(2){background-position: 0 -65px;}
 .footer_link a:hover:last-child{background-position: 0 -130px;}
+
+
+/* ----- REDDDDDDDDDDDDDDDD ------ */
+
+@media screen and (max-width: 414px){
+    footer{
+        padding: 10px
+    }
+    .footer_ma{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+    }
+    .footer_ma img{
+        width: 60%;
+        margin: 0 auto 20px;
+    }
+    .footer_con{
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+    .footer_con h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .footer_con,.footer_link{
+        margin-bottom: 40px;
+    }
+
+
+}

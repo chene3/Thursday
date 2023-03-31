@@ -100,6 +100,7 @@ let moblie = $(window).width();
 if(moblie <= 414){
   var swiper = new Swiper(".mySwiper", {
     loop: true,
+    autoplay:true,
     slidesPerView: 1.3,
     spaceBetween: 5,
     centeredSlides: true,
@@ -120,7 +121,8 @@ if(moblie <= 414){
       $('#nav-icon3').toggleClass('open');
     });
   });
-
+  
+  
 
 }
 
