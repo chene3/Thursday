@@ -72,7 +72,7 @@ new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
   },
   paginationClickable: true,
-  autoplay:true,
+  // autoplay:true,
 
   breakpoints: {
     1920: {
@@ -93,3 +93,21 @@ new Swiper('.swiper-container', {
     }
   }
 });
+
+
+let moblie = $(window).width();
+
+if(moblie < 414){
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 1.3,
+    spaceBetween: 5,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+}

@@ -26,17 +26,22 @@
     }
 
     .swiper {
-      width: 100%;
+      width: 550px;
       height: 100%;
+      margin: 0 auto;
     }
 
     .swiper-slide {
+        
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      background: #ffffff;
+      border: 1px solid red;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-basis: 90%;
+
     }
 
     .swiper-slide img {
@@ -63,8 +68,13 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
+    new Swiper(".mySwiper", {
+     loop: true,
+      slidesPerView: 2,
+      centeredSlides: true,
+    //   spaceBetween: 40,
+    slidesOffsetBefore :80,
+    //   autoplay:true
       
     });
   </script>

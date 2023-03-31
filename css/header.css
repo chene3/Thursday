@@ -21,7 +21,6 @@ nav{
 }
 nav .logo{
     pointer-events: auto;
-    width: 300px;
 }
 nav .logo img{
     float: left;
@@ -33,6 +32,7 @@ nav .logo img:first-child{
     z-index: 33;
 }
 nav .logo .logo_text{
+    /* border: 1px solid red; */
     width: 253px;
     position: absolute;
     top: 72px;
@@ -41,6 +41,7 @@ nav .logo .logo_text{
     pointer-events: none;
 }
 nav .logo img:last-child{
+    /* border: 1px solid blue; */
     margin-left: 23px;
     width: 230px;
     transition: 1s;
@@ -86,4 +87,25 @@ nav ul.nav_icon li a{
 nav ul.nav li a:hover{
     text-shadow: none;
     color: #A28C54;
+}
+
+
+/* ----- REDDDDDDDDDDDDDDDD ------ */
+
+@media screen and (max-width: 414px){
+nav .logo img{
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .3));
+}
+#logoIcon{
+    width: 60px;
+    /* border: 1px solid red; */
+}
+nav .logo .logo_text{
+    top: 48px;
+    left: 54px;
+}
+#logoText{
+    width: 100px;
+    margin-left: 10px;
+}
 }
