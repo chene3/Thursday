@@ -97,7 +97,7 @@ new Swiper('.swiper-container', {
 
 let moblie = $(window).width();
 
-if(moblie < 414){
+if(moblie <= 414){
   var swiper = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 1.3,
@@ -109,5 +109,18 @@ if(moblie < 414){
     },
   });
 
+  
+  $(document).ready(function() {
+    $('.nav').hide();
+    var burger = $('.burger');
+    var nav = $('.nav');
+    burger.click(function() {
+      nav.fadeToggle();
+      $('body').toggleClass('no-scroll');
+      $('#nav-icon3').toggleClass('open');
+    });
+  });
+
 
 }
+
