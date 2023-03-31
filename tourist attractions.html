@@ -328,30 +328,42 @@
     <!-- 這裡是地圖的內文 ----- 結束-->
     <section>
         <h2>Transportation Information</h2>
-        <div class="inf_con" data-aos="fade-right">
-            <h3>Public Transportation</h3>
-            <div class="text_con bg_1">
-                <ul>
-                    <li>Bus: The city has an extensive bus network, with routes covering all major
-                        areas. You can find route maps and schedules at the bus station or online.</li>
-                    <li>Subway: The subway system is fast and convenient, with trains running from
-                        early morning until late at night. Fares are based on distance traveled.</li>
-                </ul>
+        <div class="inf_con">
+            <div class="ccc_left" data-aos="fade-right">
+                <h3>Public Transportation</h3>
+                <div class="text_con bg_1">
+                    <ul>
+                        <li>Bus: The city has an extensive bus network, with routes covering all major
+                            areas. You can find route maps and schedules at the bus station or online.</li>
+                        <li>Subway: The subway system is fast and convenient, with trains running from
+                            early morning until late at night. Fares are based on distance traveled.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ccc_right" data-aos="fade-left">
+                <div class="ccc_img train"></div>
             </div>
         </div>
-        <div class="inf_con mar_car" data-aos="fade-right">
-            <h3>Car</h3>
-            <div class="text_con bg_2">
-                <ul>
-                    <li>Car Rental: There are several car rental companies in the city. You can rent
-                        a car with a valid driver's license and credit card.
-                    </li>
-                    <li>Parking: There are paid parking spots throughout the city. Be sure to check
-                        the parking regulations in the area you're visiting.</li>
-                </ul>
+        <div class="inf_con mar_car">
+            <div class="ccc_right" data-aos="fade-right">
+                <div class="ccc_img car"></div>
             </div>
+            <div class="ccc_left" data-aos="fade-left">
+                <h3>Car</h3>
+                <div class="text_con bg_2">
+                    <ul>
+                        <li>Car Rental: There are several car rental companies in the city. You can rent
+                            a car with a valid driver's license and credit card.
+                        </li>
+                        <li>Parking: There are paid parking spots throughout the city. Be sure to check
+                            the parking regulations in the area you're visiting.</li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
-        <div class="inf_con mar_bicycle" data-aos="fade-right">
+        <div class="inf_con mar_bicycle">
+            <div class="ccc_left" data-aos="fade-right">
             <h3>Bicycle</h3>
             <div class="text_con bg_3">
                 <ul>
@@ -363,8 +375,16 @@
                         or ride on the sidewalk outside of busy areas.</li>
                 </ul>
             </div>
+            </div>
+            <div class="ccc_right" data-aos="fade-left">
+                <div class="ccc_img train"></div>
+            </div>
         </div>
-        <div class="inf_con mar_pedestrian" data-aos="fade-right">
+        <div class="inf_con mar_pedestrian">
+            <div class="ccc_right" data-aos="fade-right">
+                <div class="ccc_img train"></div>
+            </div>
+            <div class="ccc_left" data-aos="fade-left">
             <h3>Pedestrian</h3>
             <div class="text_con bg_4">
                 <ul>
@@ -376,6 +396,8 @@
                         or ride on the sidewalk outside of busy areas.</li>
                 </ul>
             </div>
+            </div>
+           
         </div>
     </section>
 
@@ -418,9 +440,13 @@
                     }, 500);
                 } else {
                     for (let i = 0; i < att_into.length; i++) {
-                        att_into[i].classList.remove('-on');
+                        att_into[i]
+                            .classList
+                            .remove('-on');
                     }
-                    att_into[i].classList.add('-on');
+                    att_into[i]
+                        .classList
+                        .add('-on');
                     on = document.getElementsByClassName('-on')[0];
                     main = on.querySelector(".img_main");
                     img_sild = on.querySelectorAll(".img_sild_c");
@@ -462,13 +488,15 @@
 
         const all_sild = document.querySelectorAll('.img_sild_c')
 
-        
         for (let i = 0; i < all_sild.length; i++) {
             all_sild[i].addEventListener("mousedown", function () {
                 const current = all_sild[i];
                 var new_img = all_sild[i].innerHTML;
-                const curent_main = current.parentElement.parentElement.querySelector('.img_main');   
-                
+                const curent_main = current
+                    .parentElement
+                    .parentElement
+                    .querySelector('.img_main');
+
                 curent_main
                     .querySelector("img")
                     .remove();

@@ -71,21 +71,25 @@ new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next',
   },
-  slidesPerView: 3,
   paginationClickable: true,
-  slidesOffsetBefore : -330,
+  autoplay:true,
+
   breakpoints: {
     1920: {
       slidesPerView: 3,
-      spaceBetween: 40
+      spaceBetween: 40,
+      slidesOffsetBefore : -330
     },
     1028: {
       slidesPerView: 2,
-      spaceBetween: 40
+      spaceBetween: 40,
+      slidesOffsetBefore : -330
     },
     480: {
       slidesPerView: 1,
-      spaceBetween: 40
+      spaceBetween: 40,
+      slidesOffsetBefore : 0,
+      autoplay:true
     }
   }
 });

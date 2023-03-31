@@ -244,17 +244,28 @@ h2{
     left: 335px;
     top: 279px;
 }
-/*---------------   內容介紹 ＿ 開始   -----------------*/
+/*---------------   內容介紹 ＿ 結束   -----------------*/
 .inf_con{
-    width: 50%;
+    width: 90%;
     padding: 40px;
-    position: relative;
+    /* border: 1px solid red; */
+    display: flex;
+    align-content: space-between;
 }
-.mar_car{margin-left: 150px;}
+.ccc_left{
+    width: 60%;
+    /* border: 1px solid rgb(25, 166, 195); */
+}
+.ccc_right{
+    width: 40%;
+    /* border: 1px solid green; */
+}
+/* .mar_car{margin-left: 150px;}
 .mar_bicycle{margin-left: 300px;}
-.mar_pedestrian{margin-left: 450px;}
+.mar_pedestrian{margin-left: 450px;} */
 .inf_con h3{
     color: #eee;
+    position: relative;
 }
 .inf_con h3::before{
     content: '';
@@ -264,8 +275,11 @@ h2{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -40px;
+    top: -40px;
+}
+.text_con ul{
+    width: 80%;
 }
 .text_con li{
     color: #eee;
@@ -281,9 +295,19 @@ h2{
     box-sizing: border-box;
     padding: 100px 70px 0 100px;
     background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ccc_img{
+    margin: 50px auto ;
+    width: 70%;
+    height: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .bg_1{background-image: url(../img/tourist_con_bg_1.png);}
 .bg_2{background-image: url(../img/tourist_con_bg_2.png);}
 .bg_3{background-image: url(../img/tourist_con_bg_3.png);}
 .bg_4{background-image: url(../img/tourist_con_bg_4.png);}
-
+.train{background-image: url(../img/to_train.png);}
+.car{background-image: url(../img/to_car.png);}

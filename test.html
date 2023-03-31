@@ -1,180 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8"/>
-        <title>Swiper demo</title>
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-        <!-- Link Swiper's CSS -->
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-        
-            <link rel="stylesheet" href="test.css">
-            <style>
-                section.content_news {
-    position: relative;
-    height: 500px;
-}
-.container{
-  background-color: azure;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
-}
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* width: 500px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    flex-basis: 500px;
-}
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-.swiper-slide{
-   border: 1px solid red;
-    /* height: 400px; */
-    background-image: url(../img/news_bgi.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    clear: both;
-}
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
 
-            </style>
-    </head>
-    <body>
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
       
-      <section class="content_news"> 
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="box_title"><a href="news_page.html" class="h3_hover"><h3>Important Notice: E3 Road Construction Underway in Thursday</h3></a>
-                    <div class="time">1999,02,21</div>
-                  </div>
-                  <div class="text"><a href="news_page.html"><p>Attention all Thursday residents and visitors: Construction on E3 Road will begin next week, and is expected to continue for the next several months. The road will be undergoing extensive renovations and upgrades, including repairs to the pavement and sidewalks, as well as the installation of new streetlights and traffic signals.</p></a></div>
-                  <a href="news_page.html" class="more">more<svg width="31" height="10" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0.5 5H30L22.5 0.5V9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg></a>
-              </div></div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div>
-            </div>
-        
-    
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-black"></div>
-            <div class="swiper-button-next "></div>
-        </div>
-</section>
-      <script>
-        $(document).ready(function() {
-// Swiper: Slider
-    new Swiper('.swiper-container', {
-        loop: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 3,
-        // loopedSlides: 5,
-        paginationClickable: true,
-        // slidesOffsetBefore : 50,
-        slidesPerView: 'auto',
-        // slidesPerGroupAuto: true,
-        breakpoints: {
-            1920: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-            1028: {
-                slidesPerView: 2,
-                spaceBetween: 40
-            },
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 40
-            }
-        }
     });
+  </script>
+</body>
 
-    var main = document.getElementsByClassName("img_main");
-        var item2 = document.getElementById("item2");
-        var img_sild = document.getElementsByClassName("img_sild_c");
-        var currentIndex = 0;
-        var intervalId = setInterval(changeImage, 3000);
-        
-
-        function changeImage() {
-          currentIndex = (currentIndex + 1) % img_sild.length;
-          var new_img = img_sild[currentIndex].innerHTML;
-          main[0].querySelector("img").remove();
-          main[0].insertAdjacentHTML('beforeend', new_img);
-        }
-        
-        function restartTimer(index) {
-          currentIndex = index;
-          clearInterval(intervalId);
-          intervalId = setInterval(changeImage, 3000);
-        }
-        
-        for(let i = 0; i < img_sild.length; i++){
-          img_sild[i].addEventListener("mousedown", function(e){
-            var new_img = img_sild[i].innerHTML;
-            main[0].querySelector("img").remove();
-            main[0].insertAdjacentHTML('beforeend', new_img);
-            restartTimer(i);
-          });
-        }
-
-
-        for(let j = 0; j< btn.length; j++){
-
-            btn[j].addEventListener('click', function(){
-                
-                function changeImage() {
-                    currentIndex = (currentIndex + 1 + (j * 3)) % img_sild.length;
-                    var new_img = img_sild[currentIndex].innerHTML;
-                    main[j].querySelector("img").remove();
-                    main[j].insertAdjacentHTML('beforeend', new_img);
-                }
-                function restartTimer(index) {
-                    currentIndex = index;
-                    clearInterval(intervalId);
-                    intervalId = setInterval(changeImage, 3000);
-                }
-                
-                for(let i = 0; i < img_sild.length; i++){
-                img_sild[i + (j * 3)].addEventListener("mousedown", function(){
-                    var new_img = img_sild[i + (j * 3)].innerHTML;
-                    main[j].querySelector("img").remove();
-                    main[j].insertAdjacentHTML('beforeend', new_img);
-                    restartTimer(i);
-                });
-            }})
-
-        };
-});
-
-
-      </script>
-  </body>
 </html>
