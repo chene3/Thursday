@@ -119,3 +119,56 @@ section{
 .page{
     clear: both;
 }
+
+@media screen and (max-width: 414px){
+    section{
+        width: 100%;
+    }
+    .dot{
+        width: 120px;
+        top: -40px;
+        left: 70%;
+    }
+    .box{
+        width: 95%;
+        height: 240px;
+        margin: 100px auto;
+        /* border: 1px solid red; */
+    }
+    .box_right{
+        float: unset;
+    }
+    .box_title{
+        width: 200px;
+        height: 80px;
+        top: 0px;
+        left: 0px;
+        border-radius: 2px;
+    }
+    .box_title h3{
+        font-size: 16px;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+    }
+    .time{
+        font-size: 14px;
+        top: 40px;
+        right: -40px;
+    }
+    .text{
+        top: 100px;
+        left: 55px;
+        width: 250px;
+        height: 100px;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        
+    }
+    .box .more{
+        top: 195px;
+        left: 125px;
+    }
+}

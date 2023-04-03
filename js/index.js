@@ -94,7 +94,7 @@ new Swiper('.swiper-container', {
   }
 });
 
-
+/*----- 最後一個slide -----*/
 let moblie = $(window).width();
 
 if(moblie <= 414){
@@ -108,9 +108,24 @@ if(moblie <= 414){
       el: ".swiper-pagination",
       clickable: true,
     },
+    // on: {
+    //   slideChange: function () {
+    //     var currentSlide = this.slides[this.activeIndex];
+    //     currentSlide.querySelector('.filter').classList.remove('filter-on');
+    //   },
+    //   slideNextTransitionStart: function () {
+    //     var currentSlide = this.slides[this.nextIndex];
+    //     currentSlide.querySelector('.filter').classList.add('filter-on');
+    //   },
+    //   slidePrevTransitionStart: function () {
+    //     var currentSlide = this.slides[this.prevIndex];
+    //     currentSlide.querySelector('.filter').classList.add('filter-on');
+    //   }
+    // }
+
   });
 
-  
+  /*----- nav  -----*/
   $(document).ready(function() {
     $('.nav').hide();
     var burger = $('.burger');
@@ -122,7 +137,8 @@ if(moblie <= 414){
     });
   });
   
-  
+  /*----- 最後一個slide -----*/
+
 
 }
 

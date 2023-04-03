@@ -53,3 +53,15 @@ if (moveOut) {
     isElementMovedOut = false;
 }
 }
+
+ /*----- nav  -----*/
+ $(document).ready(function() {
+  $('.nav').hide();
+  var burger = $('.burger');
+  var nav = $('.nav');
+  burger.click(function() {
+    nav.fadeToggle();
+    $('body').toggleClass('no-scroll');
+    $('#nav-icon3').toggleClass('open');
+  });
+});

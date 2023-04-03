@@ -1,87 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/title_iocn.png" type="image/x-icon" / >
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/news.css">
-    <title>Thursday | News</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                <img src="img/logo_icon.png" alt="" id="logoIcon">
-                <div class="logo_text">
-                <img src="img/logo_text.png" alt="" id="logoText">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <link rel="icon" href="img/title_iocn.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/news.css">
+        <title>Thursday | News</title>
+    </head>
+    <body>
+        <header>
+            <nav id="margin">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_icon.png" alt="" id="logoIcon">
+                        <div class="logo_text">
+                            <img src="img/logo_text.png" alt="" id="logoText">
+                        </div>
+                    </a>
                 </div>
-                </a>
-            </div>
-            <ul class="nav">
-                <li><a href="history.html">History</a></li>
-                <li><a href="tourist attractions.html">Tourist information</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="news.html" class="on">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <ul class="nav_icon">
-                    <li><a href="#"  target="_blank"></a></li>
-                    <li><a href="#"  target="_blank"></a> </li>
+                <div class="nav_con">
+                    <div class="burger">
+                        <div id="nav-icon3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="history.html">History</a>
+                        </li>
+                        <li>
+                            <a href="tourist attractions.html">Tourist information</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="news.html" class="on">News</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <ul class="nav_icon">
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"></a>
+                            </li>
+                        </ul>
                 </ul>
-        </ul>
-    </nav>
+            </div>
+        </nav>
     </header>
     <h1 class="title">News</h1>
     <section id="con">
         <div class="dot" id="dot"></div>
         <div class="box">
-            <div class="box_title"><a href="news_page.html" class="h3_hover"><h3>Important Notice: E3 Road Construction Underway in Thursday</h3></a>
-            <div class="time">1999,02,21</div>
-                </div>
-            <div class="text"><a href="news_page.html"><p>Attention all Thursday residents and visitors: Construction on E3 Road will begin next week, and is expected to continue for the next several months. The road will be undergoing extensive renovations and upgrades, including repairs to the pavement and sidewalks, as well as the installation of new streetlights and traffic signals.</p></a></div>
-            <a href="news_page.html" class="more">more<svg width="31" height="10" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 5H30L22.5 0.5V9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></a>
+            <div class="box_title">
+                <a href="news_page.html" class="h3_hover">
+                    <h3>Important Notice: E3 Road Construction Underway in Thursday</h3>
+                </a>
+                <div class="time">1999,02,21</div>
+            </div>
+            <div class="text">
+                <a href="news_page.html">
+                    <p>Attention all Thursday residents and visitors: Construction on E3 Road will
+                        begin next week, and is expected to continue for the next several months. The
+                        road will be undergoing extensive renovations and upgrades, including repairs to
+                        the pavement and sidewalks, as well as the installation of new streetlights and
+                        traffic signals.</p>
+                </a>
+            </div>
+            <a href="news_page.html" class="more">more<svg
+                width="31"
+                height="10"
+                viewbox="0 0 31 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 5H30L22.5 0.5V9"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
         <div class="box box_right">
-            <div class="box_title"><a href="news_page.html" class="h3_hover"><h3>Thursday to Host the 2023 City Flower Exhibition</h3></a>
-            <div class="time">1999,02,21</div>
-                </div>
-            <div class="text"><a href="news_page.html"><p>Excitement is building in Thursday as the town prepares to host the highly-anticipated 2023 City Flower Exhibition. The event will showcase some of the most beautiful and exotic flowers from around the world and promises to be a feast for the senses.</p></a></div>
-            <a href="news_page.html" class="more">more<svg width="31" height="10" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 5H30L22.5 0.5V9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></a>
+            <div class="box_title">
+                <a href="news_page.html" class="h3_hover">
+                    <h3>Thursday to Host the 2023 City Flower Exhibition</h3>
+                </a>
+                <div class="time">1999,02,21</div>
+            </div>
+            <div class="text">
+                <a href="news_page.html">
+                    <p>Excitement is building in Thursday as the town prepares to host the
+                        highly-anticipated 2023 City Flower Exhibition. The event will showcase some of
+                        the most beautiful and exotic flowers from around the world and promises to be a
+                        feast for the senses.</p>
+                </a>
+            </div>
+            <a href="news_page.html" class="more">more<svg
+                width="31"
+                height="10"
+                viewbox="0 0 31 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 5H30L22.5 0.5V9"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
         <div class="box">
-            <div class="box_title"><a href="news_page.html" class="h3_hover"><h3>Beware of Nighttime Wildlife on Thursday's Roads</h3> </a>
-            <div class="time">1999,02,21</div>
-               </div>
-            <div class="text"><a href="news_page.html"><p>Attention all visitors to Thursday: please be aware of the increased risk of nighttime wildlife on the town's roads. As the sun sets and darkness falls, the local wildlife becomes more active, making it more likely that they may venture onto the roads.
-                While</p></a></div>
-            <a href="news_page.html" class="more">more<svg width="31" height="10" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 5H30L22.5 0.5V9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></a>
+            <div class="box_title">
+                <a href="news_page.html" class="h3_hover">
+                    <h3>Beware of Nighttime Wildlife on Thursday's Roads</h3>
+                </a>
+                <div class="time">1999,02,21</div>
+            </div>
+            <div class="text">
+                <a href="news_page.html">
+                    <p>Attention all visitors to Thursday: please be aware of the increased risk of
+                        nighttime wildlife on the town's roads. As the sun sets and darkness falls, the
+                        local wildlife becomes more active, making it more likely that they may venture
+                        onto the roads. While</p>
+                </a>
+            </div>
+            <a href="news_page.html" class="more">more<svg
+                width="31"
+                height="10"
+                viewbox="0 0 31 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 5H30L22.5 0.5V9"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
         <div class="box box_right">
-            <div class="box_title"><a href="news_page.html" class="h3_hover"><h3>Maintenance and Repairs of Thursday Town Fountain</h3></a>
-            <div class="time">1999,02,21</div>
+            <div class="box_title">
+                <a href="news_page.html" class="h3_hover">
+                    <h3>Maintenance and Repairs of Thursday Town Fountain</h3>
+                </a>
+                <div class="time">1999,02,21</div>
             </div>
-            <div class="text"><a href="news_page.html"><p>The town fountain in Thursday has long been a beloved landmark and a source of pride for the community. However, as with any structure, it requires regular maintenance and repairs to ensure its longevity and functionality. Starting from November 2022 to January 2023, the town fountain will undergo necessary maintenance and repairs to ensure its continued beauty and function.</p></a></div>
-            <a href="news_page.html" class="more">more<svg width="31" height="10" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 5H30L22.5 0.5V9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></a>
+            <div class="text">
+                <a href="news_page.html">
+                    <p>The town fountain in Thursday has long been a beloved landmark and a source
+                        of pride for the community. However, as with any structure, it requires regular
+                        maintenance and repairs to ensure its longevity and functionality. Starting from
+                        November 2022 to January 2023, the town fountain will undergo necessary
+                        maintenance and repairs to ensure its continued beauty and function.</p>
+                </a>
+            </div>
+            <a href="news_page.html" class="more">more<svg
+                width="31"
+                height="10"
+                viewbox="0 0 31 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 5H30L22.5 0.5V9"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
-        <div class="page">
-            
-        </div>
+        <div class="page"></div>
     </section>
 
     <footer>
@@ -94,54 +203,82 @@
                     Service Time : Monday – Friday , 10 am – 4 pm</p>
             </div>
             <div class="footer_link">
-                <a href="#"  target="_blank"></a>
-                <a href="#"  target="_blank"></a>
-                <a href="#"  target="_blank"></a>
+                <a href="#" target="_blank"></a>
+                <a href="#" target="_blank"></a>
+                <a href="#" target="_blank"></a>
             </div>
         </div>
     </footer>
     <script src="js/all.js"></script>
     <!-- <script src="js/mouse.js"></script> -->
     <script>
-        var con_oftop = document.getElementById('con').offsetTop;
+        let moblie = $(window).width();
+
+        
+        var con_oftop = document
+            .getElementById('con')
+            .offsetTop;
         var box = document.getElementsByClassName('box');
-        var box_height = box[0].offsetHeight;  // 422px
+        var box_height = box[0].offsetHeight; // 422px
         var dot = document.getElementById('dot');
         var dot_start = dot.offsetTop;
-        
-        
-        
-        window.addEventListener("scroll", function(){
+        if(moblie > 414){
+        window.addEventListener("scroll", function () {
             var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
             var start = scrollY - 100;
             // console.log(scrollY);
             console.log(start);
 
-            if(start < -10 && start > -200){
+            if (start < -10 && start > -200) {
                 dot.style.top = '150px';
                 dot.style.left = '75%';
-//                dot.style.transform = 'rotateY(0deg)';
+                //                dot.style.transform = 'rotateY(0deg)';
             }
 
-            if(start < 412 && start > -10){
+            if (start < 412 && start > -10) {
                 dot.style.top = '572px';
                 dot.style.left = '15%';
-//                dot.style.transform = 'rotateY(180deg)';
+                //                dot.style.transform = 'rotateY(180deg)';
             }
 
-            if(start < 834 && start > 412){
+            if (start < 834 && start > 412) {
                 dot.style.top = '1014px';
                 dot.style.left = '75%';
-//                dot.style.transform = 'rotateY(0deg)';
+                //                dot.style.transform = 'rotateY(0deg)';
             }
-            
-            if(start < 1000 && start > 834){
+
+            if (start < 1000 && start > 834) {
                 dot.style.top = '1456px';
                 dot.style.left = '15%';
-//                dot.style.transform = 'rotateY(180deg)';
+                //                dot.style.transform = 'rotateY(180deg)';
             }
         });
+    }
+        
+        
+        if(moblie <= 414){
+            window.addEventListener("scroll", function () {
+            var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
+            var start = scrollY - 100;
+            console.log(start);
 
+            if ( start < -170) {
+                dot.style.top = '-40px';
+            }
+            if (start > -170 && start < 220) {
+                dot.style.top = '350px';
+                dot.style.left = '70%';
+            }
+            if (start > 220 && start < 610) {
+                dot.style.top = '740px';
+                dot.style.left = '70%';
+            }
+            if (start > 610) {
+                dot.style.top = '1130px';
+                dot.style.left = '70%';
+            }
+        });
+        }
 
     </script>
 </body>

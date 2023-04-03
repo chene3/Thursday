@@ -106,3 +106,33 @@ input[type=submit]:active{
     color: #4B4127;
     border-bottom: 2px solid #4B4127;
 }
+@media screen and (max-width: 414px){
+    section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .left_box{
+        width: 100%;
+        order: 2;
+        /* border: 1px solid red; */
+    }
+    .left_box .img{
+        transform: rotate(90deg);
+        width: 100px;
+        height:300px;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+    .right_box{
+        width: 100%;
+        order: 1;
+        margin: 0 auto;
+    }
+    .left_text{
+        padding: 0;
+        width:fit-content;
+        /* border: 1px solid red; */
+        margin: 0 auto 90px;
+    }
+    
+}

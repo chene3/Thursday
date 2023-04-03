@@ -35,6 +35,7 @@ section {
 
 .title_con .icon_1 {
     background-image: url(../img/blog_page_icon_1.png);
+    background-repeat: no-repeat;
     background-size: contain;
     width: 180px;
     height: 180px;
@@ -146,9 +147,7 @@ section {
 .button_con .previous:hover,
 .button_con .back:hover,
 .button_con .next:hover {
-    width: 150px;
-    background-image: none;
-    position: relative;
+    pointer-events: none;
 }
 
 .button_con .previous:hover::after {
@@ -187,6 +186,7 @@ section {
     float: right;
     overflow: hidden;
     margin-bottom: 80px;
+    
 }
 
 .swiper-slide {
@@ -195,6 +195,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .swiper-slide img {
@@ -202,4 +203,80 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    background-color: #A28C54;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #A28C54;
+  }
+
+@media screen and (max-width: 414px){
+section{
+    width: 100%;
+}
+.title_con{
+    margin-bottom: 20px;
+}
+.title_con .title{
+    width: 100%;
+}
+.title p{
+    font-size: 20px;
+    left: -110px;
+    top: 40px;
+}
+.title_con .title h2{
+    font-size: 22px;
+}
+.title_con .icon_1{
+    background-position: center bottom 25px;
+    width: 30%;
+}
+.img_con::before{
+    width: 200px;
+    height: 200px;
+    top: -20px;
+}
+.img_con .img{
+    width: 80%;
+    height: 200px;
+}
+
+.text_con{
+    width: 90%;
+    margin: 0 auto 90px;
+    flex-direction: column;
+}
+.button_con{
+    border-right: none;
+    order: 2;
+}
+.button_con ul{
+    border-right: 2px solid #A28C54;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button_con ul li {
+    margin: 20px;
+}
+.text{
+    order: 1;
+}
+.button_con .previous:hover,
+.button_con .back:hover,
+.button_con .next:hover{
+    width: 100%;
+}
+.button_con .previous:hover::after,.button_con .back:hover::after, .button_con .next:hover::after {
+    content: "";
+    pointer-events: none;
+}
+.swiper{
+    margin: 0 20px 40px;
+    width: 80%;
+    height: 230px;
+}
+
 }

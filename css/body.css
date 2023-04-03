@@ -67,3 +67,12 @@ li{
     z-index: 99;
     pointer-events: none;
 }  
+@media screen and (max-width: 414px){
+h1.title{
+    margin: 100px 20px 50px;
+
+}
+h2{
+    font-size: 28px;
+}
+}

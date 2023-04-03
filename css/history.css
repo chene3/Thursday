@@ -24,6 +24,7 @@
     left: 75px;
     background-image: url(../img/his_star.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     z-index: 22;
     pointer-events: none;
@@ -89,18 +90,13 @@
     background: #A28C54;
     position: absolute;
     top: 0;
-    left: 50%;
+    right: 50%;
     
 }
 .content_1{
     width: 100%;
     margin-bottom: 100px;
-    /* position: relative; */
-
     display: flex;
-    
-    /* align-content: space-between; */
-    /* align-items:end; */
 }
 .img_flex{
     width: 300px;
@@ -149,4 +145,82 @@
 }
 .content_box h2{
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 414px){
+    .block_1{
+        width: 100%;
+        flex-direction: column;
+    }
+    .star_bg{
+        margin: 45px auto 0;
+    }
+    .aastar_bg{
+        width: 90%;
+        background-size: contain;
+        left: 10px;
+        right: 0;
+        top: 0;
+        margin: auto;
+    }
+    .con_text{
+        width: 90%;
+        margin: 70px auto;
+    }
+    .con_text p{
+        padding: 0;
+    }
+    .anm{
+        display: none;
+    }
+    .block_2{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .time_line{
+        width: 100%;
+    }
+    .time_line::before{
+        right: 30px;
+        height: 66.5%;
+        padding-bottom: 200px;
+    }
+    .content_1{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .img_flex{
+        width: 65%;
+        margin: 20px 50px;
+        position: relative;
+    }
+    .img_flex::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 45%;
+        right: -73px;
+        background-image: url(../img/Star.png);
+        background-size: cover;
+        background-position: center center;
+        z-index: 1;
+    }
+    .content_img{
+        width: 100%;
+    }
+    .content_box{
+        padding: 0;
+        width: 70%;
+        margin: 0 50px 0;
+    }
+    .left::before,.right::before{
+        display: none;
+    }
+    .box_rwd_1{
+        order: 2;
+    }
+    .box_rwd_1{
+        order: 1;
+    }
 }
