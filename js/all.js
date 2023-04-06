@@ -55,6 +55,8 @@ if (moveOut) {
 }
 
  /*----- nav  -----*/
+ let mobile = $(window).width();
+ if(mobile <= 414){
  $(document).ready(function() {
   $('.nav').hide();
   var burger = $('.burger');
@@ -65,3 +67,6 @@ if (moveOut) {
     $('#nav-icon3').toggleClass('open');
   });
 });
+}else{
+  $('.nav').show();
+}

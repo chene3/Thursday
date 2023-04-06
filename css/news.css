@@ -2,6 +2,7 @@ section{
     width: 1000px;
     margin: 80px auto;
     position: relative;
+    pointer-events: fill;
 }
 @keyframes owl{
     0%{
@@ -42,7 +43,7 @@ section{
     position: relative;
     clear: both;
     padding: 20px 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .box_right{
     float: right;
@@ -63,7 +64,6 @@ section{
     cursor: pointer;
 }
 .h3_hover:hover {
-/*    border-bottom: 1px solid #7C6D44;*/
     text-decoration: underline solid #4B4127 1px;
     text-underline-offset: 5px;
 }
@@ -159,8 +159,8 @@ section{
         right: -40px;
     }
     .text{
-        top: 100px;
-        left: 55px;
+        top: 95px;
+        left: 40px;
         width: 250px;
         height: 100px;
         -webkit-line-clamp: 4;
@@ -168,7 +168,7 @@ section{
         
     }
     .box .more{
-        top: 195px;
+        top: 190px;
         left: 125px;
     }
 }

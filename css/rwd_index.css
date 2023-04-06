@@ -151,7 +151,7 @@
         text-shadow: 1px 1px 1px rgba(20, 20, 20, .7) ;
     }
     .filter{
-        opacity: 0;  
+        /* opacity: 0.8;   */
         background-color: black;
         position: absolute;
         top: 0;

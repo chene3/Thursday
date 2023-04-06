@@ -103,6 +103,7 @@
             </a>
         </div>
         <div class="box box_right">
+            <a href="#">
             <div class="box_title">
                 <a href="news_page.html" class="h3_hover">
                     <h3>Thursday to Host the 2023 City Flower Exhibition</h3>
@@ -130,6 +131,7 @@
                         stroke-linejoin="round"/>
                 </svg>
             </a>
+        </a>
         </div>
         <div class="box">
             <div class="box_title">
@@ -226,37 +228,31 @@
         window.addEventListener("scroll", function () {
             var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
             var start = scrollY - 100;
-            // console.log(scrollY);
             console.log(start);
 
             if (start < -10 && start > -200) {
                 dot.style.top = '150px';
                 dot.style.left = '75%';
-                //                dot.style.transform = 'rotateY(0deg)';
             }
 
             if (start < 412 && start > -10) {
                 dot.style.top = '572px';
                 dot.style.left = '15%';
-                //                dot.style.transform = 'rotateY(180deg)';
             }
 
             if (start < 834 && start > 412) {
                 dot.style.top = '1014px';
                 dot.style.left = '75%';
-                //                dot.style.transform = 'rotateY(0deg)';
             }
 
             if (start < 1000 && start > 834) {
                 dot.style.top = '1456px';
                 dot.style.left = '15%';
-                //                dot.style.transform = 'rotateY(180deg)';
             }
         });
     }
-        
-        
-        if(moblie <= 414){
+    
+    if(moblie <= 414){
             window.addEventListener("scroll", function () {
             var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
             var start = scrollY - 100;
@@ -279,6 +275,8 @@
             }
         });
         }
+        
+        
 
     </script>
 </body>

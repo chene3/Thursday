@@ -114,7 +114,33 @@ h1.title{
     color: aliceblue; 
 }
 
-
+@media screen and (max-width: 414px){
+    section{
+        padding-bottom: 90px;
+    }
+    .con{
+        width: 100%;
+    }
+    .con_title{
+        width: 100%;
+    }
+    .con_title h2{
+        width: 100%;
+    }
+    .con_text, .btn{
+        /* border: 1px solid red; */
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn .back::before{
+        width: 50px;
+    }
+    .btn .back::after{
+        width: 50px;
+    }
+}
 
 
 

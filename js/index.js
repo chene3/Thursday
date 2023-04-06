@@ -109,20 +109,26 @@ if(moblie <= 414){
       clickable: true,
     },
     // on: {
-    //   slideChange: function () {
+    //   slideChangeTransitionStart: function () {
+    //     // 取消目前幻燈片子元素的 filter class
     //     var currentSlide = this.slides[this.activeIndex];
-    //     currentSlide.querySelector('.filter').classList.remove('filter-on');
+    //     var currentSlideChildren = currentSlide.querySelectorAll(".filter-on");
+    //     currentSlideChildren.forEach(function (child) {
+    //       child.classList.remove("filter");
+    //       child.classList.remove("filter-on");
+    //     });
+  
+    //     // 為前一個幻燈片子元素新增 filter-on class
+    //     var prevSlide = this.slides[this.previousIndex];
+    //     var prevSlideChildren = prevSlide.querySelectorAll(".filter");
+    //     prevSlideChildren.forEach(function (child) {
+    //       child.classList.add("filter-on");
+    //     });
     //   },
-    //   slideNextTransitionStart: function () {
-    //     var currentSlide = this.slides[this.nextIndex];
-    //     currentSlide.querySelector('.filter').classList.add('filter-on');
-    //   },
-    //   slidePrevTransitionStart: function () {
-    //     var currentSlide = this.slides[this.prevIndex];
-    //     currentSlide.querySelector('.filter').classList.add('filter-on');
-    //   }
-    // }
-
+    // },
+  });
+  swiper.on('slideChange', function() {
+    console.log('目前顯示的幻燈片索引為 ' + (swiper.realIndex + 1));
   });
 
   /*----- nav  -----*/
