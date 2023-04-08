@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/tourist attractions.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Thursday | Tourist information</title>
     </head>
@@ -125,44 +127,44 @@
             </a>
         </div>
         <section class="map_icon_rwd">
-            <div class="slider">
-                <div class="slider-container">
-                    <div class="slider-item" data-slide-number="4"><img src="img/tourist_map_icon_4.png" alt="" class="church_r  bgc_on">
+            <div class="slider_icon">
+                <div class="slider-container_icon">
+                    <div class="slider-item_icon" data-slide-number="4"><img src="img/tourist_map_icon_4.png" alt="" class="church_r  bgc_on">
                         <p>Church</p>
                     </div>
-                    <div class="slider-item" data-slide-number="5"><img src="img/tourist_map_icon_3.png" alt="" class="fountain_r">
+                    <div class="slider-item_icon" data-slide-number="5"><img src="img/tourist_map_icon_3.png" alt="" class="fountain_r">
                         <p>Fountain</p>
                     </div>
 
-                    <div class="slider-item" data-slide-number="6"><img src="img/tourist_map_icon_1.png" alt="" class="alistair_thursday_r">
+                    <div class="slider-item_icon" data-slide-number="6"><img src="img/tourist_map_icon_1.png" alt="" class="alistair_thursday_r">
                         <p>Alistair&nbspThursday</p>
                     </div>
-                    <div class="slider-item" data-slide-number="1"><img src="img/tourist_map_icon_7.png" alt="" class="tourism_center_r">
+                    <div class="slider-item_icon" data-slide-number="1"><img src="img/tourist_map_icon_7.png" alt="" class="tourism_center_r">
                         <p>Tourism&nbspcenter</p>
                     </div>
-                    <div class="slider-item" data-slide-number="3"><img src="img/tourist_map_icon_6.png" alt="" class="mysterious_lake_r">
+                    <div class="slider-item_icon" data-slide-number="3"><img src="img/tourist_map_icon_6.png" alt="" class="mysterious_lake_r">
                         <p>Mysterious&nbspLake</p>
                     </div>
-                    <div class="slider-item" data-slide-number="2"><img src="img/tourist_map_icon_8.png" alt="" class="school_of_thursday_r">
+                    <div class="slider-item_icon" data-slide-number="2"><img src="img/tourist_map_icon_8.png" alt="" class="school_of_thursday_r">
                         <p>School&nbspof<br>Thursday</p>
                     </div>
 
-                    <div class="slider-item" data-slide-number="7"><img src="img/tourist_map_icon_5.png" alt="" class="crystal_cavern_r">
+                    <div class="slider-item_icon" data-slide-number="7"><img src="img/tourist_map_icon_5.png" alt="" class="crystal_cavern_r">
                         <p>Crystal&nbspcavern</p>
                     </div>
-                    <div class="slider-item" data-slide-number="8"><img src="img/tourist_map_icon_2.png" alt="" class="shadowpaw_r">
+                    <div class="slider-item_icon" data-slide-number="8"><img src="img/tourist_map_icon_2.png" alt="" class="shadowpaw_r">
                         <p>Shadowpaw</p>
                     </div>
                 </div>
-                <div class="slider-nav">
-                    <div class="slider-prev">
+                <div class="slider-nav_icon">
+                    <div class="slider-prev_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 85.14" fill="#A28C54">
                             <path
                                 class="cls-1"
                                 d="M8.38,0A9.41,9.41,0,0,1,12.1,2.67q18,18.09,36.14,36.14c1.48,1.48,2.18,3.16,1.5,5.18a5.47,5.47,0,0,1-1.32,2.07Q29.7,64.84,10.93,83.57A4.65,4.65,0,0,1,4,83.6c-1-1-2-1.92-2.9-3a4.53,4.53,0,0,1,.09-6q.36-.41.75-.78l30.5-30.51a6.74,6.74,0,0,0,1-1,3.64,3.64,0,0,1-.87-.49Q17.1,26.45,1.71,11.05C-.2,9.13-.58,6.49,1,4.7S4.11.86,6.55,0Z"/>
                         </svg>
                     </div>
-                    <div class="slider-next">
+                    <div class="slider-next_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 85.14">
                             <path
                                 class="cls-1"
@@ -394,7 +396,7 @@
     <!-- 這裡是地圖的內文 ----- 結束-->
     <!-- 這裡是地圖的內文 ----- 結束-->
     <!-- 這裡是地圖的內文 ----- 結束-->
-    <section >
+    <section class="trans_inf">
         <h2 class="rwd_size">Transportation Information</h2>
         <div class="inf_con">
             <div class="ccc_left" data-aos="fade-right">
@@ -445,21 +447,20 @@
                 </div>
             </div>
             <div class="ccc_right" data-aos="fade-left">
-                <div class="ccc_img train"></div>
+                <div class="ccc_img bicycle"></div>
             </div>
         </div>
         <div class="inf_con
     mar_pedestrian">
             <div class="ccc_right" data-aos="fade-right">
-                <div class="ccc_img train"></div>
+                <div class="ccc_img pedestrian"></div>
             </div>
             <div class="ccc_left" data-aos="fade-left">
                 <h3>Pedestrian</h3>
                 <div class="text_con bg_4">
                     <ul>
-                        <li>Bike Sharing: The city offers a bike-sharing program with stations located
-                            throughout the city. You can rent a bike with a credit card or through the
-                            program's mobile app.
+                        <li>Walking: Many areas of the city are pedestrian-friendly, with sidewalks and crosswalks. Always look both ways before crossing the street.
+                            Electric Scooters: Electric scooters are available for rent throughout the city. Be sure to follow traffic laws and wear a helmet.
                         </li>
                         <li>Private Bike: If you have your own bike, you can use bike lanes on the road
                             or ride on the sidewalk outside of busy areas.</li>
@@ -468,6 +469,89 @@
             </div>
         </div>
     </section>
+
+    <section class="trans_inf_rwd">
+        <h2 class="rwd_size">Transportation Information</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_train.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Public Transportation</h3>
+                        <ul>
+                            <li>Bus: The city has an extensive bus network, with routes covering all major
+                                areas. You can find route maps and schedules at the bus station or online.</li>
+                            <li>Subway: The subway system is fast and convenient, with trains running from
+                                early morning until late at night. Fares are based on distance traveled.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_car.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Car</h3>
+                        <ul>
+                            <li>Car Rental: There are several car rental companies in the city. You can rent
+                                a car with a valid driver's license and credit card.
+                            </li>
+                            <li>Parking: There are paid parking spots throughout the city. Be sure to check
+                                the parking regulations in the area you're visiting.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_bicycle.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Bicycle</h3>
+                        <ul>
+                            <li>Bike Sharing: The city offers a bike-sharing program with stations located
+                                throughout the city. You can rent a bike with a credit card or through the
+                                program's mobile app.
+                            </li>
+                            <li>Private Bike: If you have your own bike, you can use bike lanes on the road
+                                or ride on the sidewalk outside of busy areas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_skateboard_2.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Pedestrian</h3>
+                        <ul>
+                          <li>Walking: Many areas of the city are pedestrian-friendly, with sidewalks and crosswalks. Always look both ways before crossing the street.
+                              Electric Scooters: Electric scooters are available for rent throughout the city. Be sure to follow traffic laws and wear a helmet.
+                          </li>
+                          <li>Private Bike: If you have your own bike, you can use bike lanes on the road
+                              or ride on the sidewalk outside of busy areas.</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
 
     <footer>
         <div class="footer_ma">
@@ -579,8 +663,8 @@
 
         if (windows <= 414) {
             $(document).ready(function () {
-                var container = $(".slider-container");
-                var items = $(".slider-item");
+                var container = $(".slider-container_icon");
+                var items = $(".slider-item_icon");
                 var itemCount = items.length; // 總共有8個
                 var itemWidth = items.outerWidth(true); // slide的寬度
                 var scrollWidth = (itemCount - 2) * itemWidth;
@@ -604,7 +688,7 @@
                 main = on.querySelector(".img_main");
                 img_sild = on.querySelectorAll(".img_sild_c");
                 btn_th = btn_times;
-                $(".slider-prev").click(function () {
+                $(".slider-prev_icon").click(function () {
                     if (currentPosition > -itemWidth) {
                         btn_times--;
                         for (let i = 0; i < att_into.length; i++) {
@@ -632,7 +716,7 @@
                     }
                 });
 
-                $(".slider-next").click(function () {
+                $(".slider-next_icon").click(function () {
                     if (currentPosition < scrollWidth) {
                         btn_times++;
                         for (let i = 0; i < att_into.length; i++) {
@@ -678,6 +762,23 @@
                 map.style.opacity = '0';
                 $('body').toggleClass('no-scroll');
             })
+
+            //info rwdddddddddddddd
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                effect: 'fade',
+                loop: true,
+                speed: 300,
+                mousewheel: {
+                    invert: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true
+                },
+            });
         }
     </script>
 

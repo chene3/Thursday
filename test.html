@@ -1,132 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Swiper demo</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="test.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+            <link rel="stylesheet" href="css/reset.css">
+            <link rel="stylesheet" href="css/body.css">
 
-  <!-- Demo styles -->
-  <style>
-    .slider {
-      position: relative;
-      overflow: hidden;
-      border:1px solid green;
-      height: 300px;
-      width:100%;
-    }
+        <!-- Demo styles -->
+        <style></style>
+    </head>
 
-    .slider-container {
-      position: absolute;
-      width:100%;
-      height:200px;
-      top:0;
-      right:0;
-      display: flex;
-      border:1px solid red;
-      transition: transform 0.5s ease;
-    }
+    <body>
+      <section class="trans_inf_rwd">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_train.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Public Transportation</h3>
+                        <ul>
+                            <li>Bus: The city has an extensive bus network, with routes covering all major
+                                areas. You can find route maps and schedules at the bus station or online.</li>
+                            <li>Subway: The subway system is fast and convenient, with trains running from
+                                early morning until late at night. Fares are based on distance traveled.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_car.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Car</h3>
+                        <ul>
+                            <li>Car Rental: There are several car rental companies in the city. You can rent
+                                a car with a valid driver's license and credit card.
+                            </li>
+                            <li>Parking: There are paid parking spots throughout the city. Be sure to check
+                                the parking regulations in the area you're visiting.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_bicycle.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Bicycle</h3>
+                        <ul>
+                            <li>Bike Sharing: The city offers a bike-sharing program with stations located
+                                throughout the city. You can rent a bike with a credit card or through the
+                                program's mobile app.
+                            </li>
+                            <li>Private Bike: If you have your own bike, you can use bike lanes on the road
+                                or ride on the sidewalk outside of busy areas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slider-image-wrapper">
+                        <img
+                            class="slider-image"
+                            src="img/to_skateboard_2.png"
+                            alt="SliderImg">
+                    </div>
+                    <div class="slider-item-content">
+                        <h3>Pedestrian</h3>
+                        <ul>
+                          <li>Walking: Many areas of the city are pedestrian-friendly, with sidewalks and crosswalks. Always look both ways before crossing the street.
+                              Electric Scooters: Electric scooters are available for rent throughout the city. Be sure to follow traffic laws and wear a helmet.
+                          </li>
+                          <li>Private Bike: If you have your own bike, you can use bike lanes on the road
+                              or ride on the sidewalk outside of busy areas.</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
 
-    .slider-item {
-    /*   width:100px; */
-      height:200px;
-      background-color: #dddddd;
-      flex: 0 0 calc(100% / 3);
-      margin-right: 10px;
-    }
+            <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-    .slider-item:last-child {
-      margin-right: 0;
-    }
-
-    .slider-nav {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      transform: translateY(-50%);
-    }
-
-    .slider-prev,
-    .slider-next {
-      display: inline-block;
-      padding: 10px;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-    }
-
-    .slider-prev {
-      float: left;
-    }
-
-    .slider-next {
-      float: right;
-    }
-
-
-  </style>
-</head>
-
-<body>
-  <div class="slider">
-    <div class="slider-container">
-      <div class="slider-item" data-slide-number="1" style="background-color: #FF0000;">1</div>
-      <div class="slider-item" data-slide-number="2" style="background-color: #FFA500;">2</div>
-      <div class="slider-item" data-slide-number="3" style="background-color: #FFFF00;">3</div>
-      <div class="slider-item" data-slide-number="4" style="background-color: #008000;">4</div>
-      <div class="slider-item" data-slide-number="5" style="background-color: #0000FF;">5</div>
-      <div class="slider-item" data-slide-number="6" style="background-color: #4B0082;">6</div>
-      <div class="slider-item" data-slide-number="7" style="background-color: #EE82EE;">7</div>
-      <div class="slider-item" data-slide-number="8" style="background-color: #000000; color: #FFFFFF;">8</div>
-    </div>
-    <div class="slider-nav">
-      <div class="slider-prev"><i class="fas fa-chevron-left"></i></div>
-      <div class="slider-next"><i class="fas fa-chevron-right"></i></div>
-    </div>
-  </div>
-  
-
-  <!-- Initialize Swiper -->
-  <script>
-    $(document).ready(function() {
-  var container = $(".slider-container");
-  var items = $(".slider-item");
-  var itemCount = items.length; // 總共有8個
-  var itemWidth = items.outerWidth(true); // slide的寬度
-  // var visibleItems = 1; 
-  // var visibleWidth = visibleItems * itemWidth;
-   var scrollWidth = (itemCount - 2 ) * itemWidth;
-   console.log(itemWidth);
-   console.log(itemCount);
-   console.log(scrollWidth);
-  var currentPosition = -itemWidth;
-  
-   $(container).css('right', - itemWidth + 'px');
-  
-
-  $(".slider-prev").click(function() {
-    if (currentPosition > -itemWidth) {
-      currentPosition -= itemWidth;
-      console.log(currentPosition);
-      container.animate({right: currentPosition + "px"}, 500);
-    }
-  });
-  
-  $(".slider-next").click(function() {
-    if (currentPosition < scrollWidth) {
-      currentPosition += itemWidth;
-      console.log(currentPosition);
-      container.animate({right: currentPosition + "px"}, 500);
-    }
-  });
-});
-
-
-  </script>
-</body>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                effect: 'fade',
+                loop: true,
+                speed: 300,
+                mousewheel: {
+                    invert: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true
+                },
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            });
+        </script>
+    </body>
 
 </html>

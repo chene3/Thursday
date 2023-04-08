@@ -2,7 +2,11 @@
     h2{
         font-size: 28px;
     }
+    section{
+        overflow: hidden;
+    }
     section.banner{
+        width: 100%;
         height: 90vh;
     }
     .content_text{
@@ -128,17 +132,18 @@
 
 
     .text_rwd{
-        height: 180px;
+        height: 150px;
         background-color: rgba(0, 0, 0, .7);
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 30px;
+        bottom: 25px;
         margin: auto;
         padding: 10px 15px;
         box-sizing: border-box;
     }
     .text_rwd p{
+        font-size: 13px;
         line-height: 1.1em;
         text-align: left;
     }
