@@ -16,13 +16,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <link rel="icon" href="img/title_iocn.png" type="image/x-icon">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/body.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/header&footer.css">
         <link rel="stylesheet" href="css/tourist attractions.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Thursday | Tourist information</title>
     </head>
@@ -459,8 +460,10 @@
                 <h3>Pedestrian</h3>
                 <div class="text_con bg_4">
                     <ul>
-                        <li>Walking: Many areas of the city are pedestrian-friendly, with sidewalks and crosswalks. Always look both ways before crossing the street.
-                            Electric Scooters: Electric scooters are available for rent throughout the city. Be sure to follow traffic laws and wear a helmet.
+                        <li>Walking: Many areas of the city are pedestrian-friendly, with sidewalks and
+                            crosswalks. Always look both ways before crossing the street. Electric Scooters:
+                            Electric scooters are available for rent throughout the city. Be sure to follow
+                            traffic laws and wear a helmet.
                         </li>
                         <li>Private Bike: If you have your own bike, you can use bike lanes on the road
                             or ride on the sidewalk outside of busy areas.</li>
@@ -476,10 +479,7 @@
             <div class="swiper-wrapper">
                 <div class="slider-item swiper-slide">
                     <div class="slider-image-wrapper">
-                        <img
-                            class="slider-image"
-                            src="img/to_train.png"
-                            alt="SliderImg">
+                        <img class="slider-image" src="img/to_train.png" alt="SliderImg">
                     </div>
                     <div class="slider-item-content">
                         <h3>Public Transportation</h3>
@@ -493,10 +493,7 @@
                 </div>
                 <div class="slider-item swiper-slide">
                     <div class="slider-image-wrapper">
-                        <img
-                            class="slider-image"
-                            src="img/to_car.png"
-                            alt="SliderImg">
+                        <img class="slider-image" src="img/to_car.png" alt="SliderImg">
                     </div>
                     <div class="slider-item-content">
                         <h3>Car</h3>
@@ -511,10 +508,7 @@
                 </div>
                 <div class="slider-item swiper-slide">
                     <div class="slider-image-wrapper">
-                        <img
-                            class="slider-image"
-                            src="img/to_bicycle.png"
-                            alt="SliderImg">
+                        <img class="slider-image" src="img/to_bicycle.png" alt="SliderImg">
                     </div>
                     <div class="slider-item-content">
                         <h3>Bicycle</h3>
@@ -530,28 +524,26 @@
                 </div>
                 <div class="slider-item swiper-slide">
                     <div class="slider-image-wrapper">
-                        <img
-                            class="slider-image"
-                            src="img/to_skateboard_2.png"
-                            alt="SliderImg">
+                        <img class="slider-image" src="img/to_skateboard_2.png" alt="SliderImg">
                     </div>
                     <div class="slider-item-content">
                         <h3>Pedestrian</h3>
                         <ul>
-                          <li>Walking: Many areas of the city are pedestrian-friendly, with sidewalks and crosswalks. Always look both ways before crossing the street.
-                              Electric Scooters: Electric scooters are available for rent throughout the city. Be sure to follow traffic laws and wear a helmet.
-                          </li>
-                          <li>Private Bike: If you have your own bike, you can use bike lanes on the road
-                              or ride on the sidewalk outside of busy areas.</li>
-                      </ul>
+                            <li>Walking: Many areas of the city are pedestrian-friendly, with sidewalks and
+                                crosswalks. Always look both ways before crossing the street. Electric Scooters:
+                                Electric scooters are available for rent throughout the city. Be sure to follow
+                                traffic laws and wear a helmet.
+                            </li>
+                            <li>Private Bike: If you have your own bike, you can use bike lanes on the road
+                                or ride on the sidewalk outside of busy areas.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="swiper-pagination"></div>
         </div>
-      </section>
-
+    </section>
 
     <footer>
         <div class="footer_ma">
@@ -753,7 +745,7 @@
             let X = document.getElementsByClassName('X')[0]
             for (i = 0; i < h2.length; i++) {
                 h2[i].addEventListener('click', function (event) {
-                    
+
                     map.style.opacity = '1';
                     $('body').toggleClass('no-scroll');
                 });
@@ -777,7 +769,7 @@
                     el: '.swiper-pagination',
                     clickable: true,
                     dynamicBullets: true
-                },
+                }
             });
         }
     </script>

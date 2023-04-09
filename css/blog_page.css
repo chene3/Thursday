@@ -147,7 +147,9 @@ section {
 .button_con .previous:hover,
 .button_con .back:hover,
 .button_con .next:hover {
-    pointer-events: none;
+    width: 150px;
+    background-image: none;
+    position: relative;
 }
 
 .button_con .previous:hover::after {
@@ -267,6 +269,7 @@ section{
 .button_con .previous:hover,
 .button_con .back:hover,
 .button_con .next:hover{
+    position: static;
     width: 100%;
 }
 .button_con .previous:hover::after,.button_con .back:hover::after, .button_con .next:hover::after {

@@ -90,7 +90,7 @@
     background: #A28C54;
     position: absolute;
     top: 0;
-    right: 50%;
+    right: 49.75%;
     
 }
 .content_1{
@@ -182,7 +182,7 @@
     }
     .time_line::before{
         right: 30px;
-        height: 66.5%;
+        height: 65%;
         padding-bottom: 200px;
     }
     .content_1{

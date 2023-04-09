@@ -15,9 +15,7 @@
         <link rel="icon" href="img/title_iocn.png" type="image/x-icon">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/body.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/header&footer.css">
         <link rel="stylesheet" href="css/blog.css">
         <title>Thursday | Blog</title>
     </head>
@@ -334,31 +332,31 @@
     <script>
         let moblie = $(window).width();
 
-        if(moblie > 414){
-        let cat = document.getElementsByClassName('cat');
-        let hover_li = document
-            .getElementsByClassName('blog_con')[0]
-            .querySelectorAll('li');
-        let a = 0;
-        console.log(hover_li);
-        for (let i = 0; i < hover_li.length; i++) {
+        if (moblie > 414) {
+            let cat = document.getElementsByClassName('cat');
+            let hover_li = document
+                .getElementsByClassName('blog_con')[0]
+                .querySelectorAll('li');
+            let a = 0;
+            console.log(hover_li);
+            for (let i = 0; i < hover_li.length; i++) {
 
-            hover_li[i].addEventListener('mouseenter', function () {
-                cat[i].style.animationName = 'cat, cat_enter';
-                cat[i].style.animationDuration = '2s , 1s';
-                cat[i].style.animationTimingFunction = 'linear, ease-in-out';
-                cat[i].style.animationIterationCount = 'infinite, 1';
-                cat[i].style.animationFillMode = 'none, forwards'
-            });
-            hover_li[i].addEventListener('mouseleave', function () {
-                cat[i].style.animationName = 'cat, cat_leave';
-                cat[i].style.animationDuration = '2s , 1s';
-                cat[i].style.animationTimingFunction = 'linear, ease-in-out';
-                cat[i].style.animationIterationCount = 'infinite, 1';
-                cat[i].style.animationFillMode = 'none, forwards'
-            });
+                hover_li[i].addEventListener('mouseenter', function () {
+                    cat[i].style.animationName = 'cat, cat_enter';
+                    cat[i].style.animationDuration = '2s , 1s';
+                    cat[i].style.animationTimingFunction = 'linear, ease-in-out';
+                    cat[i].style.animationIterationCount = 'infinite, 1';
+                    cat[i].style.animationFillMode = 'none, forwards'
+                });
+                hover_li[i].addEventListener('mouseleave', function () {
+                    cat[i].style.animationName = 'cat, cat_leave';
+                    cat[i].style.animationDuration = '2s , 1s';
+                    cat[i].style.animationTimingFunction = 'linear, ease-in-out';
+                    cat[i].style.animationIterationCount = 'infinite, 1';
+                    cat[i].style.animationFillMode = 'none, forwards'
+                });
+            }
         }
-    }
     </script>
 </body>
 </html>

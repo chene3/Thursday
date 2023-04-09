@@ -15,9 +15,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <link rel="icon" href="img/title_iocn.png" type="image/x-icon">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/body.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/header&footer.css">
         <link rel="stylesheet" href="css/news.css">
         <title>Thursday | News</title>
     </head>
@@ -104,34 +102,34 @@
         </div>
         <div class="box box_right">
             <a href="#">
-            <div class="box_title">
-                <a href="news_page.html" class="h3_hover">
-                    <h3>Thursday to Host the 2023 City Flower Exhibition</h3>
+                <div class="box_title">
+                    <a href="news_page.html" class="h3_hover">
+                        <h3>Thursday to Host the 2023 City Flower Exhibition</h3>
+                    </a>
+                    <div class="time">1999,02,21</div>
+                </div>
+                <div class="text">
+                    <a href="news_page.html">
+                        <p>Excitement is building in Thursday as the town prepares to host the
+                            highly-anticipated 2023 City Flower Exhibition. The event will showcase some of
+                            the most beautiful and exotic flowers from around the world and promises to be a
+                            feast for the senses.</p>
+                    </a>
+                </div>
+                <a href="news_page.html" class="more">more<svg
+                    width="31"
+                    height="10"
+                    viewbox="0 0 31 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.5 5H30L22.5 0.5V9"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    </svg>
                 </a>
-                <div class="time">1999,02,21</div>
-            </div>
-            <div class="text">
-                <a href="news_page.html">
-                    <p>Excitement is building in Thursday as the town prepares to host the
-                        highly-anticipated 2023 City Flower Exhibition. The event will showcase some of
-                        the most beautiful and exotic flowers from around the world and promises to be a
-                        feast for the senses.</p>
-                </a>
-            </div>
-            <a href="news_page.html" class="more">more<svg
-                width="31"
-                height="10"
-                viewbox="0 0 31 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.5 5H30L22.5 0.5V9"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
             </a>
-        </a>
         </div>
         <div class="box">
             <div class="box_title">
@@ -216,7 +214,6 @@
     <script>
         let moblie = $(window).width();
 
-        
         var con_oftop = document
             .getElementById('con')
             .offsetTop;
@@ -224,60 +221,57 @@
         var box_height = box[0].offsetHeight; // 422px
         var dot = document.getElementById('dot');
         var dot_start = dot.offsetTop;
-        if(moblie > 414){
-        window.addEventListener("scroll", function () {
-            var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
-            var start = scrollY - 100;
-            console.log(start);
-
-            if (start < -10 && start > -200) {
-                dot.style.top = '150px';
-                dot.style.left = '75%';
-            }
-
-            if (start < 412 && start > -10) {
-                dot.style.top = '572px';
-                dot.style.left = '15%';
-            }
-
-            if (start < 834 && start > 412) {
-                dot.style.top = '1014px';
-                dot.style.left = '75%';
-            }
-
-            if (start < 1000 && start > 834) {
-                dot.style.top = '1456px';
-                dot.style.left = '15%';
-            }
-        });
-    }
-    
-    if(moblie <= 414){
+        if (moblie > 414) {
             window.addEventListener("scroll", function () {
-            var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
-            var start = scrollY - 100;
-            console.log(start);
+                var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
+                var start = scrollY - 100;
+                console.log(start);
 
-            if ( start < -170) {
-                dot.style.top = '-40px';
-            }
-            if (start > -170 && start < 220) {
-                dot.style.top = '350px';
-                dot.style.left = '70%';
-            }
-            if (start > 220 && start < 610) {
-                dot.style.top = '740px';
-                dot.style.left = '70%';
-            }
-            if (start > 610) {
-                dot.style.top = '1130px';
-                dot.style.left = '70%';
-            }
-        });
+                if (start < -10 && start > -200) {
+                    dot.style.top = '150px';
+                    dot.style.left = '75%';
+                }
+
+                if (start < 412 && start > -10) {
+                    dot.style.top = '572px';
+                    dot.style.left = '15%';
+                }
+
+                if (start < 834 && start > 412) {
+                    dot.style.top = '1014px';
+                    dot.style.left = '75%';
+                }
+
+                if (start < 1000 && start > 834) {
+                    dot.style.top = '1456px';
+                    dot.style.left = '15%';
+                }
+            });
         }
-        
-        
 
+        if (moblie <= 414) {
+            window.addEventListener("scroll", function () {
+                var scrollY = window.pageYOffset - con_oftop; //從con容器開始為0
+                var start = scrollY - 100;
+                console.log(start);
+
+                if (start < -170) {
+                    dot.style.top = '-40px';
+                }
+                if (start > -170 && start < 220) {
+                    dot.style.top = '350px';
+                    dot.style.left = '70%';
+                }
+                if (start > 220 && start < 610) {
+                    dot.style.top = '740px';
+                    dot.style.left = '70%';
+                }
+                if (start > 610) {
+                    dot.style.top = '1130px';
+                    dot.style.left = '70%';
+                }
+            });
+        }
     </script>
 </body>
 </html>
