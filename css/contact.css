@@ -113,15 +113,17 @@ input[type=submit]:active{
     }
     .left_box{
         width: 100%;
+        padding: 0 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
         order: 2;
-        /* border: 1px solid red; */
+        margin: 30px auto 90px;
     }
     .left_box .img{
-        transform: rotate(90deg);
         width: 100px;
         height:300px;
         margin: 0 auto;
-        /* border: 1px solid red; */
     }
     .right_box{
         width: 100%;
@@ -129,10 +131,10 @@ input[type=submit]:active{
         margin: 0 auto;
     }
     .left_text{
+        flex-shrink: 0;
         padding: 0;
         width:fit-content;
-        /* border: 1px solid red; */
-        margin: 0 auto 90px;
+        margin: auto auto ;
     }
     
 }
