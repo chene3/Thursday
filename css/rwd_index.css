@@ -155,16 +155,6 @@
     .swiper-slide h3{
         text-shadow: 1px 1px 1px rgba(20, 20, 20, .7) ;
     }
-    .filter{
-        /* opacity: 0.8;   */
-        background-color: black;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index:22;
-    }
     .filter-on{
         opacity: 0.7;  
     }

@@ -662,26 +662,34 @@
                 var scrollWidth = (itemCount - 2) * itemWidth;
                 var currentPosition = -itemWidth;
                 var btn_times = 0;
+                var first_btn_pos = itemWidth * -2;
+                var last_btn_pos = itemWidth * 5;
+                console.log(last_btn_pos);
                 var icon = items.find("img");
-
                 for (let i = 0; i < att_into.length; i++) {
                     att_into[i]
                         .classList
                         .remove('-on');
                 }
-
                 att_into[btn_times]
                     .classList
                     .add('-on');
 
                 $(container).css('right', -itemWidth + 'px');
-
                 on = document.getElementsByClassName('-on')[0];
                 main = on.querySelector(".img_main");
                 img_sild = on.querySelectorAll(".img_sild_c");
                 btn_th = btn_times;
+                $(".slider-prev_icon").css('opacity','0');
                 $(".slider-prev_icon").click(function () {
                     if (currentPosition > -itemWidth) {
+                        if(currentPosition <= 0){
+                            $(".slider-prev_icon").css('opacity','0');
+                        }
+                        if(currentPosition <= scrollWidth){
+                            $(".slider-next_icon").css('opacity','1');
+                        }
+                        console.log(currentPosition);
                         btn_times--;
                         for (let i = 0; i < att_into.length; i++) {
                             att_into[i]
@@ -710,6 +718,14 @@
 
                 $(".slider-next_icon").click(function () {
                     if (currentPosition < scrollWidth) {
+                        console.log(currentPosition);
+                        if(currentPosition > first_btn_pos){
+                            $(".slider-prev_icon").css('opacity','1');
+                        }
+                        if(currentPosition >= last_btn_pos){
+                            $(".slider-next_icon").css('opacity','0');
+                        }
+                        
                         btn_times++;
                         for (let i = 0; i < att_into.length; i++) {
                             att_into[i]
@@ -745,7 +761,6 @@
             let X = document.getElementsByClassName('X')[0]
             for (i = 0; i < h2.length; i++) {
                 h2[i].addEventListener('click', function (event) {
-
                     map.style.opacity = '1';
                     $('body').toggleClass('no-scroll');
                 });

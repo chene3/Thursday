@@ -142,7 +142,6 @@ ul.box_1{
     transform: scaleX(0);  
     transform-origin: 100% 50%;
     transition: transform .25s ease-in-out;
-    
   }
 .line_hover:hover:after { 
     transform: scaleX(1);
@@ -214,7 +213,6 @@ ul.box_1{
     cursor: pointer;
 }
 .h3_hover:hover {
-    /*    border-bottom: 1px solid #7C6D44;*/
         text-decoration: underline solid #4B4127 1px;
         text-underline-offset: 5px;
     }
@@ -323,7 +321,6 @@ ul.box_1{
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
     transition: .5s;
-    z-index: 44;
 }
 .item1{
     background-image: url(../img/item_1.png);

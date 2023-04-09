@@ -397,7 +397,8 @@ section{
     background-color: #10101099;
     border: 2px solid #A28C54;
     border-right: none;
-    
+    opacity: 1;
+    transition: .5s;
     cursor: pointer;
   }
   .slider-prev_icon svg,
