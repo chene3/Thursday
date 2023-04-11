@@ -117,18 +117,16 @@ input[type=submit]:active{
         display: flex;
         align-content: center;
         justify-content: center;
-        order: 2;
-        margin: 30px auto 90px;
+        margin: 0 auto 30px;
     }
     .left_box .img{
         width: 100px;
-        height:300px;
+        height:220px;
         margin: 0 auto;
     }
     .right_box{
         width: 100%;
-        order: 1;
-        margin: 0 auto;
+        margin: 0 auto 90px;
     }
     .left_text{
         flex-shrink: 0;
